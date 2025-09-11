@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Stay updated with the latest insights, research, and news on AI-powered disaster management and response.">
+  <title>AI Disaster Response System - Blog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="main.css">
+
+  <script src="main.js" defer></script>
+</head>
+<body>
+  
+  <!-- News Ticker -->
+  <aside class="news-ticker" aria-label="News ticker">
+    <div class="ticker-content">
+      <i class="fas fa-bullhorn" aria-hidden="true"></i> 
+      <span>ALERT: New blog post on flood prediction algorithms now available.</span>
+    </div>
+  </aside>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">
+        <h1>
+          <a href="index.html" aria-label="AI Disaster Response System homepage">
+            AI Disaster Response
+          </a>
+        </h1>
+      </div>
+      
+      <button class="mobile-menu-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      
+      <nav class="navbar" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="alerts.html">Alerts</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="volunteers.html">Volunteers</a></li>
+          <li><a href="blog.html" class="active" aria-current="page">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Weather Widget -->
+      <div class="weather-widget" aria-label="Weather information">
+        <i class="fas fa-cloud-sun" aria-hidden="true"></i>
+        <span>28°C</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Blog Hero Section -->
+    <section class="blog-hero" aria-labelledby="blog-heading">
+      <div class="container">
+        <div class="blog-hero-content">
+          <h1 id="blog-heading">AI Disaster Response Blog</h1>
+          <p>Insights, updates, and research on AI-powered disaster management</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Content -->
+    <div class="container">
+      <div class="blog-container">
+        <div class="blog-main">
+          <!-- Featured Post -->
+          <article class="featured-post" aria-labelledby="featured-post-heading">
+            <div class="featured-image">
+              <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&q=80&w=1000" alt="AI analyzing disaster patterns on multiple screens">
+              <div class="post-category">Featured</div>
+            </div>
+            <div class="featured-content">
+              <h2 id="featured-post-heading">How AI Predicted the Recent Coastal Flooding 72 Hours in Advance</h2>
+              <div class="post-meta">
+                <span><i class="far fa-user" aria-hidden="true"></i> Dr. Sarah Chen</span>
+                <span><i class="far fa-calendar" aria-hidden="true"></i> June 15, 2025</span>
+                <span><i class="far fa-clock" aria-hidden="true"></i> 5 min read</span>
+              </div>
+              <p>Our latest flood prediction algorithm successfully forecasted the recent coastal flooding event with 94% accuracy, allowing authorities to implement early evacuation procedures. This post explains the technical improvements that made this possible...</p>
+              <a href="blog-post.html" class="btn-primary">Read More</a>
+            </div>
+          </article>
+
+          <!-- Blog Posts Grid -->
+          <div class="blog-grid">
+            <!-- Post 1 -->
+            <article class="blog-post" aria-labelledby="post1-heading">
+              <div class="post-image">
+                <img src="https://images.unsplash.com/photo-1563207153-f403bf289096?auto=format&fit=crop&q=80&w=1000" alt="Data collection from multiple IoT sensors">
+                <div class="post-category">Technology</div>
+              </div>
+              <div class="post-content">
+                <h3 id="post1-heading">Integrating IoT Sensors with Our AI Prediction Models</h3>
+                <div class="post-meta">
+                  <span><i class="far fa-user" aria-hidden="true"></i> Mark Johnson</span>
+                  <span><i class="far fa-calendar" aria-hidden="true"></i> June 10, 2025</span>
+                </div>
+                <p>How we're incorporating real-time data from thousands of IoT sensors to improve the accuracy of our disaster prediction models...</p>
+                <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="blog-post" aria-labelledby="post2-heading">
+              <div class="post-image">
+                <img src="https://images.unsplash.com/photo-1593113630400-ea4288922497?auto=format&fit=crop&q=80&w=1000" alt="Flood relief efforts in Kerala">
+                <div class="post-category">Case Study</div>
+              </div>
+              <div class="post-content">
+                <h3 id="post2-heading">Case Study: AI-Driven Resource Allocation During the Kerala Floods</h3>
+                <div class="post-meta">
+                  <span><i class="far fa-user" aria-hidden="true"></i> Priya Sharma</span>
+                  <span><i class="far fa-calendar" aria-hidden="true"></i> June 5, 2025</span>
+                </div>
+                <p>An in-depth look at how our system optimized rescue operations and resource distribution during the recent flooding in Kerala...</p>
+                <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+
+            <!-- Post 3 -->
+            <article class="blog-post" aria-labelledby="post3-heading">
+              <div class="post-image">
+                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=1000" alt="AI analyzing earthquake data patterns">
+                <div class="post-category">Research</div>
+              </div>
+              <div class="post-content">
+                <h3 id="post3-heading">New Neural Network Architecture for Earthquake Prediction</h3>
+                <div class="post-meta">
+                  <span><i class="far fa-user" aria-hidden="true"></i> Dr. Alex Rivera</span>
+                  <span><i class="far fa-calendar" aria-hidden="true"></i> May 28, 2025</span>
+                </div>
+                <p>We've developed a novel neural network approach that shows promising results in early earthquake detection. This technical post explains our methodology...</p>
+                <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+
+            <!-- Post 4 -->
+            <article class="blog-post" aria-labelledby="post4-heading">
+              <div class="post-image">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=1000" alt="Mobile app alert notification">
+                <div class="post-category">Updates</div>
+              </div>
+              <div class="post-content">
+                <h3 id="post4-heading">Mobile App Update: Enhanced Alert Customization</h3>
+                <div class="post-meta">
+                  <span><i class="far fa-user" aria-hidden="true"></i> Lisa Wang</span>
+                  <span><i class="far fa-calendar" aria-hidden="true"></i> May 22, 2025</span>
+                </div>
+                <p>Our latest mobile app update includes new features for customizing disaster alerts based on location and disaster type preferences...</p>
+                <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+
+            <!-- Post 5 -->
+            <article class="blog-post" aria-labelledby="post5-heading">
+              <div class="post-image">
+                <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&q=80&w=1000" alt="Resource allocation map visualization">
+                <div class="post-category">Partnerships</div>
+              </div>
+              <div class="post-content">
+                <h3 id="post5-heading">Collaborating with UN Disaster Response Teams</h3>
+                <div class="post-meta">
+                  <span><i class="far fa-user" aria-hidden="true"></i> Michael Roberts</span>
+                  <span><i class="far fa-calendar" aria-hidden="true"></i> May 15, 2025</span>
+                </div>
+                <p>How our partnership with United Nations disaster response teams is helping scale our AI technology to more regions worldwide...</p>
+                <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+
+            <!-- Post 6 -->
+            <article class="blog-post" aria-labelledby="post6-heading">
+              <div class="post-image">
+                <img src="https://images.unsplash.com/photo-1569941559159-4e1b3f3db8ab?auto=format&fit=crop&q=80&w=1000" alt="Wildfire rescue team in action">
+                <div class="post-category">Technology</div>
+              </div>
+              <div class="post-content">
+                <h3 id="post6-heading">Using Satellite Imagery for Early Wildfire Detection</h3>
+                <div class="post-meta">
+                  <span><i class="far fa-user" aria-hidden="true"></i> David Kim</span>
+                  <span><i class="far fa-calendar" aria-hidden="true"></i> May 8, 2025</span>
+                </div>
+                <p>Our new satellite image analysis algorithm can detect potential wildfire hotspots before they become major incidents...</p>
+                <a href="blog-post.html" class="read-more">Read More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Pagination -->
+          <nav class="pagination" aria-label="Blog pagination">
+            <a href="#" class="page-link disabled" aria-disabled="true"><i class="fas fa-chevron-left" aria-hidden="true"></i> Previous</a>
+            <a href="#" class="page-link active" aria-current="page">1</a>
+            <a href="#" class="page-link">2</a>
+            <a href="#" class="page-link">3</a>
+            <a href="#" class="page-link">Next <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+          </nav>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="blog-sidebar" aria-label="Blog sidebar">
+          <!-- Search -->
+          <div class="sidebar-widget">
+            <h3>Search</h3>
+            <form class="search-form" role="search">
+              <label for="search-input" class="visually-hidden">Search articles</label>
+              <input type="text" id="search-input" placeholder="Search articles...">
+              <button type="submit" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></button>
+            </form>
+          </div>
+
+          <!-- Categories -->
+          <div class="sidebar-widget">
+            <h3>Categories</h3>
+            <ul class="category-list">
+              <li><a href="#">Technology <span>12</span></a></li>
+              <li><a href="#">Case Studies <span>8</span></a></li>
+              <li><a href="#">Research <span>15</span></a></li>
+              <li><a href="#">Updates <span>6</span></a></li>
+              <li><a href="#">Partnerships <span>4</span></a></li>
+            </ul>
+          </div>
+
+          <!-- Recent Posts -->
+          <div class="sidebar-widget">
+            <h3>Recent Posts</h3>
+            <div class="recent-post">
+              <img src="https://images.unsplash.com/photo-1548781527-d6c8b490c91a?auto=format&fit=crop&q=80&w=300" alt="Earthquake rescue operations">
+              <div>
+                <h4><a href="#">Earthquake Response in Nepal</a></h4>
+                <span>June 12, 2025</span>
+              </div>
+            </div>
+            <div class="recent-post">
+              <img src="https://images.unsplash.com/photo-1615733357249-4535c731f2c8?auto=format&fit=crop&q=80&w=300" alt="AI response team training">
+              <div>
+                <h4><a href="#">Training AI with Historical Data</a></h4>
+                <span>June 5, 2025</span>
+              </div>
+            </div>
+            <div class="recent-post">
+              <img src="https://images.unsplash.com/photo-1560472355-536de3962603?auto=format&fit=crop&q=80&w=300" alt="United Nations collaboration">
+              <div>
+                <h4><a href="#">Global Expansion Plans</a></h4>
+                <span>May 29, 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tags -->
+          <div class="sidebar-widget">
+            <h3>Tags</h3>
+            <div class="tags">
+              <a href="#" rel="tag">AI</a>
+              <a href="#" rel="tag">Floods</a>
+              <a href="#" rel="tag">Earthquakes</a>
+              <a href="#" rel="tag">Prediction</a>
+              <a href="#" rel="tag">Response</a>
+              <a href="#" rel="tag">Technology</a>
+              <a href="#" rel="tag">Wildfires</a>
+              <a href="#" rel="tag">Cyclones</a>
+              <a href="#" rel="tag">Algorithms</a>
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="sidebar-widget">
+            <h3>Newsletter</h3>
+            <p>Stay updated with our latest research and news.</p>
+            <form class="newsletter-form">
+              <label for="email-newsletter" class="visually-hidden">Email address</label>
+              <input type="email" id="email-newsletter" placeholder="Your email address" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+          
+          <!-- Emergency Resources -->
+          <div class="sidebar-widget emergency-resources">
+            <h3>Emergency Resources</h3>
+            <ul>
+              <li><a href="resources.html#evacuation"><i class="fas fa-car" aria-hidden="true"></i> Evacuation Routes</a></li>
+              <li><a href="resources.html#shelters"><i class="fas fa-home" aria-hidden="true"></i> Emergency Shelters</a></li>
+              <li><a href="resources.html#checklist"><i class="fas fa-list-check" aria-hidden="true"></i> Preparedness Checklist</a></li>
+              <li><a href="alerts.html"><i class="fas fa-bell" aria-hidden="true"></i> Emergency Alerts</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-about">
+          <h3>About</h3>
+          <p>
+            AI Disaster Response System is a research-based project aimed at
+            modernizing disaster management using Artificial Intelligence.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="volunteers.html">Volunteers</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p>Email: support@aidisaster.com</p>
+          <p>Phone: +91-9876543210</p>
+          <p>Location: Greater Noida, India</p>
+          <div class="emergency-contact">
+            <h4>Emergency Hotline</h4>
+            <p class="emergency-number">+91-9123456789</p>
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <h3>Stay Updated</h3>
+          <p>Subscribe to our newsletter for the latest updates on disaster predictions and preparedness tips.</p>
+          <form>
+            <label for="footer-email" class="visually-hidden">Email address</label>
+            <input type="email" id="footer-email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="app-download">
+            <h4>Download Our App</h4>
+            <div class="app-badges">
+              <a href="#" aria-label="Download on App Store"><img src="https://via.placeholder.com/120x40/000/fff?text=App+Store" alt="Download on App Store"></a>
+              <a href="#" aria-label="Download on Google Play"><img src="https://via.placeholder.com/120x40/000/fff?text=Google+Play" alt="Download on Google Play"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 AI Disaster Response System. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="sitemap.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Emergency Button -->
+  <div class="emergency-button" role="button" aria-label="Emergency contact">
+    <i class="fas fa-phone-alt" aria-hidden="true"></i>
+  </div>
+  
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</body>
+</html>

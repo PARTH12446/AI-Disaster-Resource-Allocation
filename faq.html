@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Disaster Response System - Frequently Asked Questions</title>
+  <meta name="description" content="Find answers to common questions about our AI disaster response system, including technology, emergency response, volunteering, and data privacy.">
+
+  <!-- Added Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <link rel="stylesheet" href="main.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="main.js" defer></script>
+</head>
+<body>
+  
+  <!-- ================= NEWS TICKER ================= -->
+  <div class="news-ticker" aria-label="News ticker">
+    <div class="ticker-content">
+      <i class="fas fa-bullhorn" aria-hidden="true"></i> NEW: Check our FAQ for answers to common questions about our AI disaster response system.
+    </div>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="main-header">
+    <div class="logo">
+      <h1>AI Disaster Response</h1>
+    </div>
+    <nav class="navbar" aria-label="Main navigation">
+      <button class="mobile-menu-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="alerts.html">Alerts</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="volunteers.html">Volunteers</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html" class="active" aria-current="page">FAQ</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Weather Widget -->
+    <div class="weather-widget" aria-label="Current weather">
+      <i class="fas fa-cloud-sun" aria-hidden="true"></i>
+      <span>28°C</span>
+    </div>
+  </header>
+
+  <!-- ================= FAQ HERO SECTION ================= -->
+  <main id="main-content">
+    <section class="faq-hero" aria-labelledby="faq-heading">
+      <div class="faq-hero-content">
+        <h1 id="faq-heading">Frequently Asked Questions</h1>
+        <p>Find answers to common questions about our AI disaster response system</p>
+      </div>
+    </section>
+
+    <!-- ================= FAQ SEARCH ================= -->
+    <section class="faq-search" aria-labelledby="search-heading">
+      <div class="search-container">
+        <h2 id="search-heading">How can we help?</h2>
+        <div class="search-box">
+          <label for="faq-search-input" class="sr-only">Search questions or keywords</label>
+          <input type="text" id="faq-search-input" placeholder="Search questions or keywords...">
+          <button><i class="fas fa-search" aria-hidden="true"></i> Search</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ CATEGORIES ================= -->
+    <section class="faq-categories" aria-labelledby="categories-heading">
+      <div class="categories-container">
+        <h2 id="categories-heading">Browse by Category</h2>
+        <div class="category-buttons" role="tablist" aria-label="FAQ categories">
+          <button class="category-btn active" data-category="all" role="tab" aria-selected="true" aria-controls="all-questions">All Questions</button>
+          <button class="category-btn" data-category="general" role="tab" aria-selected="false" aria-controls="general-questions">General</button>
+          <button class="category-btn" data-category="technology" role="tab" aria-selected="false" aria-controls="technology-questions">Technology</button>
+          <button class="category-btn" data-category="response" role="tab" aria-selected="false" aria-controls="response-questions">Emergency Response</button>
+          <button class="category-btn" data-category="volunteer" role="tab" aria-selected="false" aria-controls="volunteer-questions">Volunteering</button>
+          <button class="category-btn" data-category="data" role="tab" aria-selected="false" aria-controls="data-questions">Data & Privacy</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ACCORDION ================= -->
+    <section class="faq-container" aria-labelledby="faq-container-heading">
+      <h2 id="faq-container-heading" class="sr-only">FAQ Questions and Answers</h2>
+      <div class="faq-accordion">
+        <!-- General Questions -->
+        <div class="faq-category" data-category="general" id="general-questions" role="tabpanel" aria-labelledby="general-heading">
+          <h2>General Questions</h2>
+          
+          <div class="faq-item">
+            <div class="faq-question" aria-expanded="false" aria-controls="answer-1">
+              <h3>What is the AI Disaster Response System?</h3>
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <div class="faq-answer" id="answer-1" aria-hidden="true">
+              <p>The AI Disaster Response System is an advanced platform that uses artificial intelligence and machine learning to predict, monitor, and coordinate response efforts for natural disasters. Our system helps governments, NGOs, and emergency services save lives and reduce damage through early warnings and optimized resource allocation.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question" aria-expanded="false" aria-controls="answer-2">
+              <h3>How is this different from traditional disaster response systems?</h3>
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <div class="faq-answer" id="answer-2" aria-hidden="true">
+              <p>Traditional systems rely heavily on human analysis and historical data. Our AI system processes real-time data from multiple sources (satellites, sensors, social media) to make accurate predictions and recommendations. This allows for earlier warnings, better resource allocation, and more efficient coordination of response efforts.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question" aria-expanded="false" aria-controls="answer-3">
+              <h3>Who can use this system?</h3>
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <div class="faq-answer" id="answer-3" aria-hidden="true">
+              <p>The system is designed for government agencies, emergency services, non-profit organizations, and authorized volunteers. We also provide public-facing alerts and information through our website and mobile applications.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Technology Questions -->
+        <div class="faq-category" data-category="technology" id="technology-questions" role="tabpanel" aria-labelledby="technology-heading" hidden>
+          <h2>Technology</h2>
+          
+          <div class="faq-item">
+            <div class="faq-question" aria-expanded="false" aria-controls="answer-4">
+              <h3>What technologies power the AI Disaster Response System?</h3>
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <div class="faq-answer" id="answer-4" aria-hidden="true">
+              <p>Our system utilizes machine learning algorithms, natural language processing, computer vision, and predictive analytics. We integrate data from satellites, IoT sensors, social media, weather stations, and historical databases to create accurate models and predictions.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question" aria-expanded="false" aria-controls="answer-5">
+              <h3>How accurate are the predictions?</h3>
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <div class="faq-answer" id="answer-5" aria-hidden="true">
+              <p>The accuracy varies by disaster type, but our current models achieve 85-95% accuracy for flood predictions, 75-85% for wildfires, and 80-90% for cyclones. Earthquake prediction remains challenging, but our early warning systems can detect seismic activity within seconds and alert areas before shaking begins.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question" aria-expanded="false" aria-controls="answer-6">
+              <h3>How often is the data updated?</h3>
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <div class="faq-answer" id="answer-6" aria-hidden="true">
+              <p>Data updates depend on the source. Satellite and sensor data is updated in near real-time (every 5-15 minutes). Social media and news monitoring occurs continuously. Predictive models are retrained weekly with new data to improve accuracy.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Emergency Response Questions -->
+        <div class="faq-category" data-category="response" id="response-questions" role="tabpanel" aria-labelledby="response-heading" hidden>
+          <h2>Emergency Response</h2>
+          
+          <div class="faq-item">
+            <div class="faq-question" aria-expanded="false" aria-controls="answer-7">
+              <h3>How quickly can the system respond to a new disaster?</h3>
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <div class="faq-answer" id="answer-7" aria-hidden="true">
+              <p>For predicted events, our system begins generating alerts and recommendations 72-48 hours in advance. For sudden events like earthquakes, the system detects and begins coordinating response within minutes, automatically notifying relevant emergency services and generating initial impact assessments.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question" aria-expanded="false" aria-controls="answer-8">
+              <h3>How does the system help during an active disaster?</h3>
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <div class="faq-answer" id="answer-8" aria-hidden="true">
+              <p>During active disasters, our system provides real-time monitoring, resource tracking, evacuation route optimization, damage assessment, and coordination between response teams. It continuously analyzes incoming data to adjust predictions and recommendations as the situation evolves.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question" aria-expanded="false" aria-controls="answer-9">
+              <h3>Can individuals receive alerts from the system?</h3>
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <div class="faq-answer" id="answer-9" aria-hidden="true">
+              <p>Yes, individuals can subscribe to alerts through our mobile app, website, or SMS notifications. Alerts are tailored to your location and the types of disasters relevant to your area. You can customize notification preferences for different alert levels.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Volunteering Questions -->
+        <div class="faq-category" data-category="volunteer" id="volunteer-questions" role="tabpanel" aria-labelledby="volunteer-heading" hidden>
+          <h2>Volunteering</h2>
+          
+          <div class="faq-item">
+            <div class="faq-question" aria-expanded="false" aria-controls="answer-10">
+              <h3>How can I volunteer to help with disaster response?</h3>
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <div class="faq-answer" id="answer-10" aria-hidden="true">
+              <p>We have multiple volunteer opportunities ranging from on-the-ground response to remote support. You can register through our Volunteers page, where you'll specify your skills, availability, and preferred role. All volunteers undergo training specific to their responsibilities.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question" aria-expanded="false" aria-controls="answer-11">
+              <h3>What qualifications do I need to volunteer?</h3>
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <div class="faq-answer" id="answer-11" aria-hidden="true">
+              <p>Requirements vary by role. Field responders need relevant emergency response certifications. Technical roles may require specific IT or data analysis skills. We also need coordinators, communicators, and support staff with various backgrounds. The most important qualification is a commitment to helping others during crises.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question" aria-expanded="false" aria-controls="answer-12">
+              <h3>Can I volunteer remotely?</h3>
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <div class="faq-answer" id="answer-12" aria-hidden="true">
+              <p>Yes, we have many remote volunteering opportunities, including data analysis, communication coordination, social media monitoring, resource management, and providing remote support to field teams. These roles are crucial to our operations and allow people worldwide to contribute.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Data & Privacy Questions -->
+        <div class="faq-category" data-category="data" id="data-questions" role="tabpanel" aria-labelledby="data-heading" hidden>
+          <h2>Data & Privacy</h2>
+          
+          <div class="faq-item">
+            <div class="faq-question" aria-expanded="false" aria-controls="answer-13">
+              <h3>What data does the system collect?</h3>
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <div class="faq-answer" id="answer-13" aria-hidden="true">
+              <p>We collect environmental data (weather, seismic activity, satellite imagery), infrastructure data, publicly available information, and anonymized mobility data. For registered users and responders, we collect necessary contact and qualification information. We never sell personal data and strictly limit its use to disaster response purposes.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question" aria-expanded="false" aria-controls="answer-14">
+              <h3>How is my personal information protected?</h3>
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <div class="faq-answer" id="answer-14" aria-hidden="true">
+              <p>We employ industry-standard encryption, access controls, and security protocols to protect all data. Personal information is stored separately from operational data and is only accessible to authorized personnel. We comply with all relevant data protection regulations and regularly audit our security practices.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question" aria-expanded="false" aria-controls="answer-15">
+              <h3>Can I request deletion of my data?</h3>
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <div class="faq-answer" id="answer-15" aria-hidden="true">
+              <p>Yes, you can request data deletion at any time by contacting our privacy team at privacy@aidisaster.com. Note that some data may be retained for legal or operational reasons, such as records of your participation in response efforts, but we will anonymize it wherever possible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT PROMPT ================= -->
+    <section class="contact-prompt" aria-labelledby="contact-prompt-heading">
+      <div class="prompt-container">
+        <div class="prompt-content">
+          <h2 id="contact-prompt-heading">Still have questions?</h2>
+          <p>Can't find the answer you're looking for? Please reach out to our support team.</p>
+          <a href="contact.html" class="btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-about">
+          <h3>About</h3>
+          <p>
+            AI Disaster Response System is a research-based project aimed at
+            modernizing disaster management using Artificial Intelligence.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="volunteers.html">Volunteers</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p>Email: <a href="mailto:support@aidisaster.com">support@aidisaster.com</a></p>
+          <p>Phone: <a href="tel:+919876543210">+91-9876543210</a></p>
+          <p>Location: Greater Noida, India</p>
+          <div class="emergency-contact">
+            <h4>Emergency Hotline</h4>
+            <p class="emergency-number"><a href="tel:+919123456789">+91-9123456789</a></p>
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <h3>Stay Updated</h3>
+          <p>Subscribe to our newsletter for the latest updates on disaster predictions and preparedness tips.</p>
+          <form>
+            <label for="newsletter-email" class="sr-only">Your email address</label>
+            <input type="email" id="newsletter-email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="app-download">
+            <h4>Download Our App</h4>
+            <div class="app-badges">
+              <a href="#" aria-label="Download on App Store"><img src="https://via.placeholder.com/120x40/000/fff?text=App+Store" alt="Download on App Store"></a>
+              <a href="#" aria-label="Download on Google Play"><img src="https://via.placeholder.com/120x40/000/fff?text=Google+Play" alt="Download on Google Play"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 AI Disaster Response System. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="sitemap.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= EMERGENCY BUTTON ================= -->
+  <div class="emergency-button" role="button" aria-label="Emergency contact">
+    <i class="fas fa-phone-alt" aria-hidden="true"></i>
+  </div>
+  
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</body>
+</html>

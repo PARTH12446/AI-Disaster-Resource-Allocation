@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="AI-Powered Disaster Predictions - Advanced forecasting for natural disasters using artificial intelligence">
+  <title>Predictions - AI Disaster Response System</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <link rel="stylesheet" href="main.css">
+
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <!-- ================= NEWS TICKER ================= -->
+  <div class="news-ticker" aria-live="polite">
+    <div class="ticker-content">
+      <i class="fas fa-bullhorn" aria-hidden="true"></i> ALERT: New AI prediction models now achieving 98.7% accuracy in flood forecasting.
+    </div>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="main-header">
+    <div class="logo">
+      <h1>AI Disaster Response</h1>
+    </div>
+    <nav class="navbar" aria-label="Main navigation">
+      <button class="mobile-menu-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="predictions.html" class="active" aria-current="page">Predictions</a></li>
+        <li><a href="alerts.html">Alerts</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="volunteers.html">Volunteers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Weather Widget -->
+    <div class="weather-widget" aria-label="Current weather">
+      <i class="fas fa-cloud-sun" aria-hidden="true"></i>
+      <span>28°C</span>
+    </div>
+  </header>
+
+  <!-- ================= PREDICTION HERO ================= -->
+  <section class="prediction-hero" aria-labelledby="prediction-hero-heading">
+    <div class="prediction-hero-content">
+      <h1 id="prediction-hero-heading">AI-Powered Disaster Predictions</h1>
+      <p>Our advanced artificial intelligence systems analyze vast amounts of data to predict natural disasters before they happen, enabling early warnings and proactive response planning.</p>
+      <div class="hero-actions">
+        <a href="#live-predictions" class="btn-primary">View Current Predictions</a>
+        <a href="#subscription" class="btn-secondary">Get Custom Alerts</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PREDICTION OVERVIEW ================= -->
+  <section class="prediction-overview" aria-labelledby="prediction-overview-heading">
+    <div class="container">
+      <div class="overview-content">
+        <div class="overview-text">
+          <h2 id="prediction-overview-heading">How Our Prediction System Works</h2>
+          <p>Our AI prediction models process terabytes of data from multiple sources including satellite imagery, seismic sensors, weather stations, ocean buoys, and historical patterns. Using advanced machine learning algorithms, we identify early warning signs of potential disasters with unprecedented accuracy.</p>
+          <p>The system continuously learns from new data, improving its predictive capabilities with each event. Our neural networks have been trained on decades of historical disaster data, enabling them to recognize subtle patterns that human analysts might miss.</p>
+          
+          <div class process-steps>
+            <div class="process-step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h3>Data Collection</h3>
+                <p>Gathering real-time data from multiple sources including satellites, sensors, and historical databases</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h3>AI Analysis</h3>
+                <p>Machine learning algorithms process the data to identify patterns and predict potential disasters</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h3>Risk Assessment</h3>
+                <p>Evaluating the severity and potential impact of predicted events</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h3>Alert Generation</h3>
+                <p>Creating targeted warnings for affected areas with recommended actions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overview-image fade-in">
+          <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=1000" alt="AI prediction visualization" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PREDICTION TYPES ================= -->
+  <section class="prediction-types" aria-labelledby="prediction-types-heading">
+    <div class="container">
+      <h2 id="prediction-types-heading" class="section-title">Disaster Types We Predict</h2>
+      <div class="prediction-grid">
+        <div class="prediction-card fade-in">
+          <div class="prediction-icon">
+            <i class="fas fa-water"></i>
+          </div>
+          <h3>Floods</h3>
+          <p>Our flood prediction system analyzes rainfall patterns, soil moisture, river levels, and topography to forecast flooding events up to 72 hours in advance with 94% accuracy.</p>
+          <div class="prediction-stats">
+            <div class="stat">
+              <span class="stat-value">72h</span>
+              <span class="stat-label">Advance Warning</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">94%</span>
+              <span class="stat-label">Accuracy</span>
+            </div>
+          </div>
+          <a href="#" class="learn-more-link">Learn more about flood predictions <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="prediction-card fade-in delay-1">
+          <div class="prediction-icon">
+            <i class="fas fa-fire"></i>
+          </div>
+          <h3>Wildfires</h3>
+          <p>Using satellite imagery, vegetation moisture data, and weather conditions, our AI can predict wildfire risk areas and potential spread patterns with 89% accuracy.</p>
+          <div class="prediction-stats">
+            <div class="stat">
+              <span class="stat-value">48h</span>
+              <span class="stat-label">Advance Warning</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">89%</span>
+              <span class="stat-label">Accuracy</span>
+            </div>
+          </div>
+          <a href="#" class="learn-more-link">Learn more about wildfire predictions <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="prediction-card fade-in delay-2">
+          <div class="prediction-icon">
+            <i class="fas fa-wind"></i>
+          </div>
+          <h3>Cyclones & Hurricanes</h3>
+          <p>Our hurricane tracking system analyzes ocean temperatures, atmospheric pressure, and wind patterns to predict storm paths and intensity with 96% accuracy.</p>
+          <div class="prediction-stats">
+            <div class="stat">
+              <span class="stat-value">120h</span>
+              <span class="stat-label">Advance Warning</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">96%</span>
+              <span class="stat-label">Accuracy</span>
+            </div>
+          </div>
+          <a href="#" class="learn-more-link">Learn more about cyclone predictions <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="prediction-card fade-in delay-3">
+          <div class="prediction-icon">
+            <i class="fas fa-mountain"></i>
+          </div>
+          <h3>Earthquakes</h3>
+          <p>While earthquake prediction remains challenging, our system analyzes seismic patterns and crustal movements to identify high-risk areas with 82% accuracy for foreshock detection.</p>
+          <div class="prediction-stats">
+            <div class="stat">
+              <span class="stat-value">Minutes</span>
+              <span class="stat-label">Early Warning</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">82%</span>
+              <span class="stat-label">Accuracy</span>
+            </div>
+          </div>
+          <a href="#" class="learn-more-link">Learn more about earthquake predictions <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="prediction-card fade-in delay-4">
+          <div class="prediction-icon">
+            <i class="fas fa-cloud-showers-heavy"></i>
+          </div>
+          <h3>Landslides</h3>
+          <p>Our landslide prediction model analyzes soil composition, rainfall data, and terrain steepness to identify areas at risk with 87% accuracy.</p>
+          <div class="prediction-stats">
+            <div class="stat">
+              <span class="stat-value">24h</span>
+              <span class="stat-label">Advance Warning</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">87%</span>
+              <span class="stat-label">Accuracy</span>
+            </div>
+          </div>
+          <a href="#" class="learn-more-link">Learn more about landslide predictions <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="prediction-card fade-in delay-5">
+          <div class="prediction-icon">
+            <i class="fas fa-temperature-high"></i>
+          </div>
+          <h3>Heatwaves</h3>
+          <p>Using atmospheric data and historical patterns, our system predicts extreme heat events with 91% accuracy up to 10 days in advance.</p>
+          <div class="prediction-stats">
+            <div class="stat">
+              <span class="stat-value">240h</span>
+              <span class="stat-label">Advance Warning</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">91%</span>
+              <span class="stat-label">Accuracy</span>
+            </div>
+          </div>
+          <a href="#" class="learn-more-link">Learn more about heatwave predictions <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LIVE PREDICTIONS ================= -->
+  <section class="live-predictions" id="live-predictions" aria-labelledby="live-predictions-heading">
+    <div class="container">
+      <h2 id="live-predictions-heading" class="section-title">Current Risk Assessments</h2>
+      
+      <div class="risk-map-container">
+        <div class="map-legend">
+          <h3>Global Risk Map</h3>
+          <div class="legend-item">
+            <span class="legend-color high-risk"></span>
+            <span>High Risk</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-color medium-risk"></span>
+            <span>Medium Risk</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-color low-risk"></span>
+            <span>Low Risk</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-color active-event"></span>
+            <span>Active Event</span>
+          </div>
+        </div>
+        <div class="map-placeholder">
+          <img src="https://images.unsplash.com/photo-1583886623590-3d4f34b45509?auto=format&fit=crop&q=80&w=1000" alt="Global risk map visualization" loading="lazy">
+          <div class="map-overlay">
+            <p>Interactive global risk assessment map showing current disaster probabilities</p>
+            <button class="btn-secondary">Explore Interactive Map</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="current-predictions">
+        <h3>Active Predictions <span class="last-updated">Last updated: <time datetime="2023-11-15T14:30:00Z">15 Nov 2023, 14:30 UTC</time></span></h3>
+        
+        <div class="prediction-filters">
+          <button class="filter-btn active">All</button>
+          <button class="filter-btn">High Risk</button>
+          <button class="filter-btn">Medium Risk</button>
+          <button class="filter-btn">Low Risk</button>
+          <button class="filter-btn">Floods</button>
+          <button class="filter-btn">Wildfires</button>
+        </div>
+        
+        <div class="prediction-list">
+          <div class="prediction-item high-risk">
+            <div class="prediction-header">
+              <h4>Flood Warning: Southeast Asia</h4>
+              <span class="risk-badge">High Risk</span>
+            </div>
+            <p>Heavy monsoon rains expected to cause flooding in coastal regions over the next 72 hours. Evacuation plans have been activated in vulnerable areas.</p>
+            <div class="prediction-details">
+              <span><i class="fas fa-clock"></i> Expected: 48-72 hours</span>
+              <span><i class="fas fa-map-marker-alt"></i> Affected: 12 regions</span>
+              <span><i class="fas fa-chart-line"></i> Confidence: 92%</span>
+              <span><i class="fas fa-users"></i> Population at risk: 2.5M</span>
+            </div>
+            <div class="prediction-actions">
+              <a href="#" class="action-link"><i class="fas fa-download"></i> Download Detailed Report</a>
+              <a href="#" class="action-link"><i class="fas fa-share-alt"></i> Share Alert</a>
+            </div>
+          </div>
+          
+          <div class="prediction-item medium-risk">
+            <div class="prediction-header">
+              <h4>Wildfire Alert: Western US</h4>
+              <span class="risk-badge">Medium Risk</span>
+            </div>
+            <p>Dry conditions and high winds creating elevated fire risk in forested areas. Fire departments are on high alert and pre-positioning resources.</p>
+            <div class="prediction-details">
+              <span><i class="fas fa-clock"></i> Expected: 24-48 hours</span>
+              <span><i class="fas fa-map-marker-alt"></i> Affected: 5 states</span>
+              <span><i class="fas fa-chart-line"></i> Confidence: 78%</span>
+              <span><i class="fas fa-users"></i> Population at risk: 850K</span>
+            </div>
+            <div class="prediction-actions">
+              <a href="#" class="action-link"><i class="fas fa-download"></i> Download Detailed Report</a>
+              <a href="#" class="action-link"><i class="fas fa-share-alt"></i> Share Alert</a>
+            </div>
+          </div>
+          
+          <div class="prediction-item low-risk">
+            <div class="prediction-header">
+              <h4>Tropical Storm: Caribbean</h4>
+              <span class="risk-badge">Low Risk</span>
+            </div>
+            <p>Developing weather system with potential to strengthen into tropical storm. Monitoring recommended for coastal communities.</p>
+            <div class="prediction-details">
+              <span><i class="fas fa-clock"></i> Expected: 96-120 hours</span>
+              <span><i class="fas fa-map-marker-alt"></i> Affected: Coastal areas</span>
+              <span><i class="fas fa-chart-line"></i> Confidence: 65%</span>
+              <span><i class="fas fa-users"></i> Population at risk: 1.2M</span>
+            </div>
+            <div class="prediction-actions">
+              <a href="#" class="action-link"><i class="fas fa-download"></i> Download Detailed Report</a>
+              <a href="#" class="action-link"><i class="fas fa-share-alt"></i> Share Alert</a>
+            </div>
+          </div>
+
+          <div class="prediction-item active-event">
+            <div class="prediction-header">
+              <h4>Ongoing: Earthquake Aftershocks - South America</h4>
+              <span class="risk-badge">Active Event</span>
+            </div>
+            <p>Continued aftershocks expected following the 7.2 magnitude earthquake. Communities advised to avoid damaged structures.</p>
+            <div class="prediction-details">
+              <span><i class="fas fa-clock"></i> Duration: Next 72 hours</span>
+              <span><i class="fas fa-map-marker-alt"></i> Affected: 150km radius</span>
+              <span><i class="fas fa-chart-line"></i> Confidence: 88%</span>
+              <span><i class="fas fa-users"></i> Population at risk: 3.7M</span>
+            </div>
+            <div class="prediction-actions">
+              <a href="#" class="action-link"><i class="fas fa-download"></i> Download Detailed Report</a>
+              <a href="#" class="action-link"><i class="fas fa-share-alt"></i> Share Alert</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PREDICTION ACCURACY ================= -->
+  <section class="accuracy-section" aria-labelledby="accuracy-heading">
+    <div class="container">
+      <h2 id="accuracy-heading" class="section-title">Prediction Accuracy & Performance</h2>
+      <div class="accuracy-content">
+        <div class="accuracy-chart fade-in">
+          <img src="https://images.unsplash.com/photo-1564422167506-94d20fe3cad2?auto=format&fit=crop&q=80&w=1000" alt="Prediction accuracy chart" loading="lazy">
+          <div class="chart-legend">
+            <div class="legend-item">
+              <span class="color-swatch color-2021"></span>
+              <span>2021 Accuracy</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-swatch color-2022"></span>
+              <span>2022 Accuracy</span>
+            </div>
+            <div class="legend-item">
+              <span class="color-swatch color-2023"></span>
+              <span>2023 Accuracy</span>
+            </div>
+          </div>
+        </div>
+        <div class="accuracy-details">
+          <h3>Continuously Improving Accuracy</h3>
+          <p>Our AI models have shown consistent improvement in prediction accuracy across all disaster types since deployment. The system learns from each event, refining its algorithms to reduce false positives and improve detection rates.</p>
+          
+          <div class="accuracy-metrics">
+            <div class="metric">
+              <span class="metric-value">98.7%</span>
+              <span class="metric-label">Flood Prediction Accuracy</span>
+              <span class="metric-trend up"><i class="fas fa-arrow-up"></i> 2.3% from last year</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">96.2%</span>
+              <span class="metric-label">Cyclone Path Prediction</span>
+              <span class="metric-trend up"><i class="fas fa-arrow-up"></i> 1.8% from last year</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">89.4%</span>
+              <span class="metric-label">Wildfire Risk Assessment</span>
+              <span class="metric-trend up"><i class="fas fa-arrow-up"></i> 3.1% from last year</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">82.1%</span>
+              <span class="metric-label">Earthquake Foreshock Detection</span>
+              <span class="metric-trend up"><i class="fas fa-arrow-up"></i> 4.2% from last year</span>
+            </div>
+          </div>
+
+          <div class="performance-highlights">
+            <h4>Performance Highlights</h4>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> 42% reduction in false alarms compared to traditional methods</li>
+              <li><i class="fas fa-check-circle"></i> Average warning time improved by 3.7 hours across all disaster types</li>
+              <li><i class="fas fa-check-circle"></i> 97.3% user satisfaction rate for prediction accuracy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DATA SOURCES ================= -->
+  <section class="data-sources" aria-labelledby="data-sources-heading">
+    <div class="container">
+      <h2 id="data-sources-heading" class="section-title">Data Sources & Methodology</h2>
+      <div class="sources-content">
+        <div class="sources-text">
+          <p>Our prediction system integrates data from multiple sources to ensure comprehensive coverage and accuracy:</p>
+          <ul class="sources-list">
+            <li><i class="fas fa-satellite"></i> <strong>Satellite Imagery:</strong> High-resolution data from NASA, ESA, and commercial providers</li>
+            <li><i class="fas fa-temperature-high"></i> <strong>Weather Stations:</strong> Real-time meteorological data from global networks</li>
+            <li><i class="fas fa-wave-square"></i> <strong>Seismic Sensors:</strong> Ground movement data from geological survey organizations</li>
+            <li><i class="fas fa-water"></i> <strong>Ocean Buoys:</strong> Sea temperature, wave height, and current data</li>
+            <li><i class="fas fa-hashtag"></i> <strong>Social Media:</strong> Real-time public reports and images (processed with NLP)</li>
+            <li><i class="fas fa-history"></i> <strong>Historical Data:</strong> Decades of historical disaster records and patterns</li>
+            <li><i class="fas fa-database"></i> <strong>Government Databases:</strong> Official records from disaster management agencies worldwide</li>
+            <li><i class="fas fa-microchip"></i> <strong>IoT Sensors:</strong> Network of ground sensors in high-risk areas</li>
+          </ul>
+          <p>Our machine learning models process this data using convolutional neural networks for image analysis, recurrent neural networks for time-series prediction, and transformer models for natural language processing of textual reports.</p>
+          
+          <div class="methodology-highlight">
+            <h4>Methodology Transparency</h4>
+            <p>We believe in transparent AI. All our prediction models are regularly audited and our methodology papers are publicly available for scientific review.</p>
+            <a href="#" class="btn-secondary">Read Our Research Papers</a>
+          </div>
+        </div>
+        <div class="sources-visual fade-in">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000" alt="Data sources visualization" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CASE STUDIES ================= -->
+  <section class="case-studies" aria-labelledby="case-studies-heading">
+    <div class="container">
+      <h2 id="case-studies-heading" class="section-title">Success Stories</h2>
+      <p class="section-subtitle">How our predictions have made a difference in real-world scenarios</p>
+      
+      <div class="case-studies-grid">
+        <div class="case-study-card">
+          <div class="case-study-image">
+            <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&q=80&w=1000" alt="Flood prevention success" loading="lazy">
+          </div>
+          <div class="case-study-content">
+            <h3>Bangladesh Flood Prevention 2023</h3>
+            <div class="case-study-stats">
+              <div class="stat">
+                <span class="number">72h</span>
+                <span class="label">Early Warning</span>
+              </div>
+              <div class="stat">
+                <span class="number">94%</span>
+                <span class="label">Accuracy</span>
+              </div>
+              <div class="stat">
+                <span class="number">15,000+</span>
+                <span class="label">Lives Protected</span>
+              </div>
+            </div>
+            <p>Our AI system accurately predicted severe flooding in the Ganges Delta region, allowing authorities to evacuate vulnerable communities and deploy resources strategically.</p>
+            <a href="#" class="read-more-link">Read full case study <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="case-study-card">
+          <div class="case-study-image">
+            <img src="https://images.unsplash.com/photo-1593113630400-ea4288922497?auto=format&fit=crop&q=80&w=1000" alt="Wildfire containment success" loading="lazy">
+          </div>
+          <div class="case-study-content">
+            <h3>California Wildfire Response 2022</h3>
+            <div class="case-study-stats">
+              <div class="stat">
+                <span class="number">36h</span>
+                <span class="label">Early Warning</span>
+              </div>
+              <div class="stat">
+                <span class="number">91%</span>
+                <span class="label">Accuracy</span>
+              </div>
+              <div class="stat">
+                <span class="number">40%</span>
+                <span class="label">Containment Time Saved</span>
+              </div>
+            </div>
+            <p>Our fire spread prediction models helped firefighters establish effective containment lines, protecting communities and reducing damage by an estimated $200M.</p>
+            <a href="#" class="read-more-link">Read full case study <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SUBSCRIPTION ================= -->
+  <section class="prediction-subscription" id="subscription" aria-labelledby="subscription-heading">
+    <div class="container">
+      <h2 id="subscription-heading">Receive Customized Predictions</h2>
+      <p class="subscription-subtitle">Sign up to receive personalized disaster predictions and alerts for your specific location</p>
+      
+      <div class="subscription-benefits">
+        <div class="benefit">
+          <i class="fas fa-bell"></i>
+          <h4>Real-time Alerts</h4>
+          <p>Get immediate notifications when risks are detected in your area</p>
+        </div>
+        <div class="benefit">
+          <i class="fas fa-map-marked-alt"></i>
+          <h4>Localized Predictions</h4>
+          <p>Receive forecasts specific to your location with recommended actions</p>
+        </div>
+        <div class="benefit">
+          <i class="fas fa-mobile-alt"></i>
+          <h4>Multiple Channels</h4>
+          <p>Choose to receive alerts via SMS, email, or mobile notifications</p>
+        </div>
+      </div>
+      
+      <form class="subscription-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Your email address" required>
+          </div>
+          <div class="form-group">
+            <label for="region">Select your region</label>
+            <select id="region" required>
+              <option value="">Select your region</option>
+              <option value="north-america">North America</option>
+              <option value="south-america">South America</option>
+              <option value="europe">Europe</option>
+              <option value="asia">Asia</option>
+              <option value="africa">Africa</option>
+              <option value="oceania">Oceania</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label>Alert Types (select all that apply)</label>
+          <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="alert-types" value="all">
+              <span class="checkmark"></span>
+              All disasters
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="alert-types" value="floods">
+              <span class="checkmark"></span>
+              Floods
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="alert-types" value="wildfires">
+              <span class="checkmark"></span>
+              Wildfires
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="alert-types" value="cyclones">
+              <span class="checkmark"></span>
+              Cyclones/Hurricanes
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="alert-types" value="earthquakes">
+              <span class="checkmark"></span>
+              Earthquakes
+            </label>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="notification-frequency">Notification Frequency</label>
+          <select id="notification-frequency">
+            <option value="immediate">Immediate alerts</option>
+            <option value="daily">Daily digest</option>
+            <option value="weekly">Weekly summary</option>
+          </select>
+        </div>
+        
+        <button type="submit" class="btn-primary">Subscribe to Alerts</button>
+        
+        <p class="privacy-note">By subscribing, you agree to our <a href="#">Privacy Policy</a> and consent to receive disaster alerts. You can unsubscribe at any time.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= FAQ SECTION ================= -->
+  <section class="prediction-faq" aria-labelledby="prediction-faq-heading">
+    <div class="container">
+      <h2 id="prediction-faq-heading" class="section-title">Frequently Asked Questions</h2>
+      
+      <div class="faq-grid">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How far in advance can you predict disasters?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Prediction windows vary by disaster type. We can typically predict floods and cyclones 48-72 hours in advance, wildfires 24-48 hours ahead, and provide minutes of warning for earthquakes. Our systems are constantly improving these lead times.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How accurate are your predictions?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Our accuracy rates are among the highest in the industry: 94% for floods, 96% for cyclones, 89% for wildfires, and 82% for earthquake foreshock detection. These figures are continuously improving as our AI learns from new data.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Are false alarms common?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>We've reduced false alarms by 42% compared to traditional prediction methods. Our AI system is designed to be highly specific, and we continuously work to minimize false positives while maintaining sensitivity to real threats.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can I get predictions for a specific location?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, our system provides hyper-local predictions. After signing up for alerts, you can specify exact locations of interest, and we'll provide tailored predictions and warnings for those areas.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How often are predictions updated?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Our predictions update in real-time as new data arrives. Major updates occur at least every 6 hours, but during developing situations, predictions may update as frequently as every 15 minutes.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-cta">
+        <p>Have more questions? <a href="contact.html">Contact our prediction specialists</a> for detailed information about our forecasting methods.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="main-footer" aria-labelledby="footer-heading">
+    <div class="container">
+      <h2 id="footer-heading" class="visually-hidden">Footer</h2>
+      <div class="footer-columns">
+        <div class="footer-about">
+          <h3>About</h3>
+          <p>
+            AI Disaster Response System is a research-based project aimed at
+            modernizing disaster management using Artificial Intelligence.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="predictions.html">Predictions</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p><i class="fas fa-envelope"></i> Email: support@aidisaster.com</p>
+          <p><i class="fas fa-phone"></i> Phone: +91-9876543210</p>
+          <p><i class="fas fa-map-marker-alt"></i> Location: Greater Noida, India</p>
+        </div>
+        <div class="footer-newsletter">
+          <h3>Stay Updated</h3>
+          <form>
+            <input type="email" placeholder="Your email address" aria-label="Your email address">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 AI Disaster Response System. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="sitemap.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= EMERGENCY BUTTON ================= -->
+  <div class="emergency-button" role="button" aria-label="Emergency contact">
+    <i class="fas fa-phone-alt"></i>
+  </div>
+
+  <!-- ================= BACK TO TOP BUTTON ================= -->
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</body>
+</html>

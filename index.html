@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="AI-Powered Disaster Response System - Predicting and managing natural disasters with artificial intelligence">
+  <title>AI Disaster Response System</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="news-ticker" aria-live="polite">
+    <div class="ticker-content">
+      <i class="fas fa-bullhorn" aria-hidden="true"></i> ALERT: Flood warning issued for coastal regions. Register your needs for proper resource allocation.
+    </div>
+  </div>
+  <header class="main-header">
+    <div class="logo">
+      <h1>AI Disaster Response</h1>
+    </div>
+    <nav class="navbar" aria-label="Main navigation">
+      <button class="mobile-menu-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-list">
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="alerts.html">Alerts</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="volunteers.html">Volunteers</a></li>
+        <li><a href="register.html">Register Needs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+    <div class="user-actions">
+      <a href="login.html" class="btn-login">Login</a>
+      <a href="register.html" class="btn-register">Register</a>
+    </div>
+  </header>
+  
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h2 id="hero-heading">AI-Powered Disaster Response & Resource Allocation</h2>
+        <p>
+          A futuristic platform that uses Artificial Intelligence to predict disasters, 
+          respond effectively, and allocate resources based on real-time needs reported by affected communities.
+        </p>
+        <p>
+          Our system combines satellite imagery analysis, community-reported needs, and AI algorithms to ensure resources reach those who need them most. Register your requirements to receive targeted assistance during emergencies.
+        </p>
+        <div class="hero-actions">
+          <a href="register.html" class="btn-primary">Register Your Needs</a>
+          <a href="dashboard.html" class="btn-secondary">View Resource Allocation</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="logo.jpg" alt="Disaster response team using AI technology for resource allocation" loading="lazy">
+      </div>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <section class="resource-allocation" aria-labelledby="allocation-heading">
+    <div class="container">
+      <h2 id="allocation-heading" class="section-title">How Resource Allocation Works</h2>
+      <div class="allocation-process">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Register Your Needs</h3>
+            <p>Affected individuals and communities register their specific requirements through our platform</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>AI Assessment</h3>
+            <p>Our AI algorithms analyze needs, prioritize based on urgency, and calculate optimal resource distribution</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Transparent Allocation</h3>
+            <p>Resources are allocated fairly and transparently, with tracking from distribution to delivery</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Verification & Feedback</h3>
+            <p>Recipients verify receipt, and the system learns from each deployment to improve future responses</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section" aria-labelledby="how-it-works-heading">
+    <div class="container">
+      <h2 id="how-it-works-heading" class="section-title">How Our AI System Works</h2>
+      <div class="content-grid">
+        <div class="content-item fade-in">
+          <div class="content-image">
+            <img src="https://images.unsplash.com/photo-1563207153-f403bf289096?auto=format&fit=crop&q=80&w=1000" alt="Data collection from multiple sources" loading="lazy">
+          </div>
+          <div class="content-text">
+            <h3>Needs Registration</h3>
+            <p>Affected communities register their specific needs through our platform, providing real-time data on required resources, location, and urgency.</p>
+            <ul>
+              <li><i class="fas fa-user-plus"></i> User registration system</li>
+              <li><i class="fas fa-clipboard-list"></i> Detailed needs assessment forms</li>
+              <li><i class="fas fa-map-marker-alt"></i> Geographical tagging of requirements</li>
+              <li><i class="fas fa-exclamation-circle"></i> Urgency classification</li>
+            </ul>
+          </div>
+        </div>
+        <div class="content-item fade-in delay-1">
+          <div class="content-image">
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=1000" alt="AI analyzing data patterns" loading="lazy">
+          </div>
+          <div class="content-text">
+            <h3>AI-Powered Allocation</h3>
+            <p>Our algorithms analyze registered needs, available resources, logistics constraints, and historical data to create optimal distribution plans.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">Neural Networks</span>
+              <span class="tech-tag">Resource Optimization</span>
+              <span class="tech-tag">Logistics Planning</span>
+              <span class="tech-tag">Priority Assessment</span>
+            </div>
+          </div>
+        </div>
+        <div class="content-item fade-in delay-2">
+          <div class="content-image">
+            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=1000" alt="Alert system notification" loading="lazy">
+          </div>
+          <div class="content-text">
+            <h3>Transparent Distribution</h3>
+            <p>Track resources from allocation to delivery with full transparency. Recipients verify receipt, creating accountability in the distribution process.</p>
+            <div class="alert-types">
+              <div class="alert-type">
+                <i class="fas fa-truck"></i>
+                <span>Delivery Tracking</span>
+              </div>
+              <div class="alert-type">
+                <i class="fas fa-check-circle"></i>
+                <span>Receipt Verification</span>
+              </div>
+              <div class="alert-type">
+                <i class="fas fa-chart-line"></i>
+                <span>Impact Analytics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="registration-cta" aria-labelledby="registration-heading">
+    <div class="container">
+      <div class="cta-content">
+        <h2 id="registration-heading">Register Your Needs for Better Resource Allocation</h2>
+        <p>
+          By registering your specific requirements during disasters, you help our AI system allocate resources more effectively. 
+          Your information enables us to prioritize aid based on actual needs rather than estimates.
+        </p>
+        <div class="cta-features">
+          <div class="feature">
+            <i class="fas fa-shield-alt"></i>
+            <h4>Secure Registration</h4>
+            <p>Your personal information is protected with advanced security measures</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-bolt"></i>
+            <h4>Quick Process</h4>
+            <p>Simple form takes less than 5 minutes to complete</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-hand-holding-heart"></i>
+            <h4>Targeted Assistance</h4>
+            <p>Receive help specifically tailored to your situation</p>
+          </div>
+        </div>
+        <div class="cta-buttons">
+          <a href="register.html" class="btn-primary">Register Your Needs Now</a>
+          <a href="how-it-works.html" class="btn-secondary">Learn How It Works</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="live-needs" aria-labelledby="needs-heading">
+    <div class="container">
+      <h2 id="needs-heading" class="section-title">Currently Reported Needs</h2>
+      <div class="needs-grid">
+        <div class="need-card">
+          <div class="need-type medical">
+            <i class="fas fa-first-aid"></i>
+            <span>Medical Assistance</span>
+          </div>
+          <div class="need-details">
+            <h3>Emergency Medical Supplies</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Coastal Region</p>
+            <p class="urgency high">High Urgency</p>
+            <p class="description">Need insulin and blood pressure medications for elderly residents</p>
+          </div>
+          <div class="need-status">
+            <div class="status in-progress">Allocation in Progress</div>
+            <div class="resources-allocated">
+              <span>80% allocated</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="need-card">
+          <div class="need-type food">
+            <i class="fas fa-utensils"></i>
+            <span>Food & Water</span>
+          </div>
+          <div class="need-details">
+            <h3>Clean Drinking Water</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Northern District</p>
+            <p class="urgency critical">Critical Urgency</p>
+            <p class="description">Water contamination reported, need immediate clean water supply</p>
+          </div>
+          <div class="need-status">
+            <div class="status completed">Fully Allocated</div>
+            <div class="resources-allocated">
+              <span>100% allocated</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 100%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="need-card">
+          <div class="need-type shelter">
+            <i class="fas fa-home"></i>
+            <span>Shelter</span>
+          </div>
+          <div class="need-details">
+            <h3>Temporary Housing</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Eastern Province</p>
+            <p class="urgency medium">Medium Urgency</p>
+            <p class="description">25 families displaced, need temporary accommodation</p>
+          </div>
+          <div class="need-status">
+            <div class="status pending">Verification Pending</div>
+            <div class="resources-allocated">
+              <span>40% allocated</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 40%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="view-all-container">
+        <a href="needs-map.html" class="btn-secondary">View All Reported Needs on Map</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" aria-labelledby="features-heading">
+    <div class="container">
+      <h2 id="features-heading" class="section-title">Key Features</h2>
+      <div class="feature-grid">
+        <div class="feature-card holographic fade-in">
+          <div class="feature-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Real-time Prediction</h3>
+          <p>
+            Our system uses advanced machine learning models to predict potential
+            disaster hotspots and their severity with up to 92% accuracy.
+          </p>
+          <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="feature-card holographic fade-in delay-1">
+          <div class="feature-icon">
+            <i class="fas fa-truck-loading"></i>
+          </div>
+          <h3>Resource Allocation</h3>
+          <p>
+            AI ensures smart distribution of resources based on real-time needs reported by affected communities.
+          </p>
+          <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="feature-card holographic fade-in delay-2">
+          <div class="feature-icon">
+            <i class="fas fa-bell"></i>
+          </div>
+          <h3>Live Alerts</h3>
+          <p>
+            Authorities and citizens receive instant alerts on potential risks
+            through multi-channel notifications.
+          </p>
+          <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="feature-card holographic fade-in delay-3">
+          <div class="feature-icon">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <h3>Volunteer Management</h3>
+          <p>
+            Track and assign volunteers based on their location, skills, and
+            availability.
+          </p>
+          <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="feature-card holographic fade-in delay-4">
+          <div class="feature-icon">
+            <i class="fas fa-map-marked-alt"></i>
+          </div>
+          <h3>Needs Mapping</h3>
+          <p>
+            Visual mapping of reported needs allows for efficient resource deployment and volunteer coordination.
+          </p>
+          <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="feature-card holographic fade-in delay-5">
+          <div class="feature-icon">
+            <i class="fas fa-user-check"></i>
+          </div>
+          <h3>Verification System</h3>
+          <p>
+            Multi-level verification ensures that resources reach genuine beneficiaries with full transparency.
+          </p>
+          <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats" aria-labelledby="stats-heading">
+    <div class="container">
+      <h2 id="stats-heading" class="section-title">Our Impact Statistics</h2>
+      <div class="stats-grid">
+        <div class="stat-item fade-in">
+          <div class="stat-number" data-count="250">0</div>
+          <div class="stat-label">
+            Disasters Predicted
+          </div>
+          <div class="stat-description">Successfully forecasted events with 92% accuracy</div>
+        </div>
+        <div class="stat-item fade-in delay-1">
+          <div class="stat-number" data-count="98">0</div>
+          <div class="stat-label">Accuracy Rate</div>
+          <div class="stat-description">Average prediction accuracy across all disaster types</div>
+        </div>
+        <div class="stat-item fade-in delay-2">
+          <div class="stat-number" data-count="5000">0</div>
+          <div class="stat-label">Lives Saved</div>
+          <div class="stat-description">Estimated lives saved through early warnings</div>
+        </div>
+        <div class="stat-item fade-in delay-3">
+          <div class="stat-number" data-count="30">0</div>
+          <div class="stat-label">Countries Served</div>
+          <div class="stat-description">Nations using our AI prediction system</div>
+        </div>
+        <div class="stat-item fade-in delay-4">
+          <div class="stat-number" data-count="120">0</div>
+          <div class="stat-label">Response Teams</div>
+          <div class="stat-description">Trained emergency teams using our platform</div>
+        </div>
+        <div class="stat-item fade-in delay-5">
+          <div class="stat-number" data-count="78">0</div>
+          <div class="stat-label">Hours Average</div>
+          <div class="stat-description">Early warning lead time before disasters</div>
+        </div>
+        <div class="stat-item fade-in delay-6">
+          <div class="stat-number" data-count="150">0</div>
+          <div class="stat-label">Cities Protected</div>
+          <div class="stat-description">Urban areas using our early warning systems</div>
+        </div>
+        <div class="stat-item fade-in delay-7">
+          <div class="stat-number" data-count="45">0</div>
+          <div class="stat-label">Response Time (mins)</div>
+          <div class="stat-description">Average reduction in emergency response time</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="technology" aria-labelledby="technology-heading">
+    <div class="container">
+      <div class="two-column">
+        <div class="column-text">
+          <h2 id="technology-heading" class="section-title">Cutting-Edge Technology</h2>
+          <p>Our platform utilizes state-of-the-art artificial intelligence technologies including convolutional neural networks for image recognition of satellite data, natural language processing for analyzing social media and news reports, and reinforcement learning for optimizing response strategies.</p>
+          <p>The system continuously learns from each event, improving its predictive capabilities over time. Our deep learning models are trained on petabytes of historical disaster data, weather patterns, topographical information, and infrastructure details.</p>
+          <p>We've developed specialized algorithms for different disaster types: flood prediction models that analyze rainfall patterns and watershed characteristics, wildfire risk assessment algorithms that process vegetation moisture content and weather conditions, and earthquake early warning systems that detect preliminary seismic waves.</p>
+          
+          <div class="tech-breakdown">
+            <div class="tech-item">
+              <i class="fas fa-brain"></i>
+              <div>
+                <h4>Machine Learning Models</h4>
+                <p>Advanced algorithms trained on decades of disaster data</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <i class="fas fa-satellite-dish"></i>
+              <div>
+                <h4>Satellite Integration</h4>
+                <p>Real-time data from multiple satellite networks</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <i class="fas fa-robot"></i>
+              <div>
+                <h4>Automated Response Systems</h4>
+                <p>AI-driven decision making for rapid deployment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column-image fade-in">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1000" alt="AI technology in disaster management" loading="lazy"> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="disaster-types" aria-labelledby="disaster-types-heading">
+    <div class="container">
+      <h2 id="disaster-types-heading" class="section-title">Disasters We Monitor</h2>
+      <div class="disaster-grid">
+        <div class="disaster-card">
+          <div class="disaster-icon">
+            <i class="fas fa-water"></i>
+          </div>
+          <h3>Floods</h3>
+          <p>Our system monitors rainfall patterns, river levels, and soil saturation to predict flooding events with 94% accuracy up to 48 hours in advance.</p>
+          <div class="disaster-stats">
+            <div class="stat">
+              <span class="number">72</span>
+              <span class="label">Hours Warning</span>
+            </div>
+            <div class="stat">
+              <span class="number">94%</span>
+              <span class="label">Accuracy</span>
+            </div>
+          </div>
+        </div>
+        <div class="disaster-card">
+          <div class="disaster-icon">
+            <i class="fas fa-fire"></i>
+          </div>
+          <h3>Wildfires</h3>
+          <p>Using satellite imagery and weather data, we detect fire risks and monitor active fires to predict spread patterns and recommend containment strategies.</p>
+          <div class="disaster-stats">
+            <div class="stat">
+              <span class="number">36</span>
+              <span class="label">Hours Warning</span>
+            </div>
+            <div class="stat">
+              <span class="number">89%</span>
+              <span class="label">Accuracy</span>
+            </div>
+          </div>
+        </div>
+        <div class="disaster-card">
+          <div class="disaster-icon">
+            <i class="fas fa-wind"></i>
+          </div>
+          <h3>Cyclones & Hurricanes</h3>
+          <p>Our models track storm formations, predict paths, and calculate potential impact zones with unprecedented precision, enabling targeted evacuations.</p>
+          <div class="disaster-stats">
+            <div class="stat">
+              <span class="number">120</span>
+              <span class="label">Hours Warning</span>
+            </div>
+            <div class="stat">
+              <span class="number">96%</span>
+              <span class="label">Accuracy</span>
+            </div>
+          </div>
+        </div>
+        <div class="disaster-card">
+          <div class="disaster-icon">
+            <i class="fas fa-mountain"></i>
+          </div>
+          <h3>Earthquakes</h3>
+          <p>While earthquakes can't be predicted far in advance, our system provides rapid alerts after the initial tremors and predicts aftershock patterns and damage zones.</p>
+          <div class="disaster-stats">
+            <div class="stat">
+              <span class="number">30</span>
+              <span class="label">Seconds Warning</span>
+            </div>
+            <div class="stat">
+              <span class="number">82%</span>
+              <span class="label">Accuracy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" aria-labelledby="gallery-heading">
+    <div class="container">
+      <h2 id="gallery-heading" class="section-title">Photo & Video Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1000" alt="Flood rescue operations" loading="lazy">
+          <div class="gallery-caption">
+            <h3>Flood Rescue</h3>
+            <p>AI-driven flood prediction enabled timely evacuations and resource deployment during the recent monsoon floods.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1000" alt="Earthquake rescue operations" loading="lazy">
+          <div class="gallery-caption">
+            <h3>Earthquake Rescue</h3>
+            <p>AI-powered damage assessment helped direct rescue teams to the most affected areas following the 7.8 magnitude earthquake.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="video-container">
+            <div class="video-placeholder">
+              <i class="fas fa-play-circle"></i>
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1000" alt="Video thumbnail" loading="lazy">  
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <h3>Response Team in Action</h3>
+            <p>Watch how our coordinated response teams use AI recommendations to prioritize rescue operations.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&q=80&w=1000" alt="Wildfire containment operations" loading="lazy">
+          <div class="gallery-caption">
+            <h3>Wildfire Containment</h3>
+            <p>AI fire spread prediction helped firefighters establish effective containment lines during the recent forest fires.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1593113630400-ea4288922497?auto=format&fit=crop&q=80&w=1000" alt="Emergency evacuation coordination" loading="lazy">
+          <div class="gallery-caption">
+            <h3>Evacuation Coordination</h3>
+            <p>AI-optimized evacuation routes reduced congestion and improved safety during coastal hurricane evacuations.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?auto=format&fit=crop&q=80&w=1000" alt="Disaster relief supply distribution" loading="lazy">
+          <div class="gallery-caption">
+            <h3>Relief Distribution</h3>
+            <p>AI-powered logistics ensured efficient delivery of emergency supplies to affected communities after the tsunami.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <h2 id="testimonials-heading" class="section-title">What People Say</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-header">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah Johnson" class="testimonial-avatar">
+            <div class="testimonial-person">
+              <h4>Sarah Johnson</h4>
+              <p>Disaster Relief Coordinator</p>
+            </div>
+          </div>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"This platform helped us save hundreds of lives during the last cyclone. The accurate prediction gave us enough time to evacuate vulnerable communities and position relief supplies where they would be most needed."</p>
+          <h4>- Disaster Relief NGO</h4>
+        </div>
+        <div class="testimonial-card fade-in delay-1">
+          <div class="testimonial-header">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="testimonial-avatar">
+            <div class="testimonial-person">
+              <h4>Michael Chen</h4>
+              <p>Local Resident</p>
+            </div>
+          </div>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>"The real-time alerts gave our community precious time to evacuate before the flood hit. The detailed instructions on evacuation routes and safe zones were incredibly helpful during a stressful situation."</p>
+        </div>
+        <div class="testimonial-card fade-in delay-2">
+          <div class="testimonial-header">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Dr. Elena Rodriguez" class="testimonial-avatar">
+            <div class="testimonial-person">
+              <h4>Dr. Elena Rodriguez</h4>
+              <p>Medical Team Coordinator</p>
+            </div>
+          </div>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"The AI-driven resource allocation ensured our limited medical supplies reached the worst-hit areas first. The system's recommendations considered road conditions, population density, and medical needs with precision we couldn't achieve manually."</p>
+        </div>
+        <div class="testimonial-card fade-in delay-3">
+          <div class="testimonial-header">
+            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="James Wilson" class="testimonial-avatar">
+            <div class="testimonial-person">
+              <h4>James Wilson</h4>
+              <p>Emergency Management Director</p>
+            </div>
+          </div>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"The predictive analytics have revolutionized our approach to disaster preparedness. We're now able to allocate resources proactively rather than reactively, which has dramatically improved our response effectiveness."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="partners" aria-labelledby="partners-heading">
+    <div class="container">
+      <h2 id="partners-heading" class="section-title">Our Global Partners</h2>
+      <p class="partners-intro">We collaborate with leading organizations worldwide to enhance disaster response capabilities and save more lives through technology.</p>
+      
+      <!-- AI Image Section Added Here -->
+      <div class="ai-image-container">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1000" alt="AI analyzing disaster patterns" class="ai-image" loading="lazy">
+        <div class="ai-image-caption">Our AI systems analyze disaster patterns to improve response times and save lives</div>
+      </div>
+      
+      <div class="partners-grid">
+        <div class="partner-logo fade-in">
+          <img src="https://via.placeholder.com/180x80/3b82f6/ffffff?text=UN+Disaster+Relief" alt="United Nations Disaster Relief" loading="lazy">
+          <div class="partner-name">United Nations Disaster Relief</div>
+        </div>
+        <div class="partner-logo fade-in delay-1">
+          <img src="https://via.placeholder.com/180x80/ef4444/ffffff?text=Red+Cross" alt="International Red Cross" loading="lazy">
+          <div class="partner-name">International Red Cross</div>
+        </div>
+        <div class="partner-logo fade-in delay-2">
+          <img src="https://via.placeholder.com/180x80/6366f1/ffffff?text=NASA" alt="NASA Earth Science Division" loading="lazy">
+          <div class="partner-name">NASA Earth Science Division</div>
+        </div>
+        <div class="partner-logo fade-in delay-3">
+          <img src="https://via.placeholder.com/180x80/f97316/ffffff?text=Google+AI" alt="Google AI for Social Good" loading="lazy">
+          <div class="partner-name">Google AI for Social Good</div>
+        </div>
+        <div class="partner-logo fade-in delay-4">
+          <!-- Using placeholder instead of worldbank.jpeg -->
+          <img src="https://via.placeholder.com/180x80/8b5cf6/ffffff?text=World+Bank" alt="World Bank Disaster Management" loading="lazy">
+          <div class="partner-name">World Bank Disaster Management</div>
+        </div>
+        <div class="partner-logo fade-in delay-5">
+          <!-- Using placeholder instead of satellite-comp.webp -->
+          <img src="https://via.placeholder.com/180x80/ec4899/ffffff?text=MIT+Lab" alt="MIT Humanitarian Response Lab" loading="lazy">
+          <div class="partner-name">MIT Humanitarian Response Lab</div>
+        </div>
+        <div class="partner-logo fade-in delay-6">
+          <img src="https://via.placeholder.com/180x80/10b981/ffffff?text=WHO" alt="World Health Organization" loading="lazy">
+          <div class="partner-name">World Health Organization</div>
+        </div>
+        <div class="partner-logo fade-in delay-7">
+          <img src="https://via.placeholder.com/180x80/f59e0b/ffffff?text=IEEE" alt="IEEE Humanitarian Initiative" loading="lazy">
+          <div class="partner-name">IEEE Humanitarian Initiative</div>
+        </div>
+      </div>
+      <div class="partners-cta">
+        <p>Interested in partnering with us? <a href="contact.html">Contact our partnership team</a> to explore collaboration opportunities.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" aria-labelledby="cta-heading">
+    <div class="container">
+      <div class="cta-content">
+                <h2 id="cta-heading">Join Us in Building a Disaster-Resilient Future</h2>
+        <p>Whether you're a government agency, relief organization, or concerned citizen, there are multiple ways to get involved with our mission to transform disaster response through AI technology.</p>
+        <div class="cta-options">
+          <div class="cta-option">
+            <h3>For Governments</h3>
+            <p>Implement our prediction and response system in your region</p>
+            <a href="government.html" class="btn-primary">Learn More</a>
+          </div>
+          <div class="cta-option">
+            <h3>For NGOs & Relief Organizations</h3>
+            <p>Partner with us to enhance your disaster response capabilities</p>
+            <a href="partners.html" class="btn-primary">Partner With Us</a>
+          </div>
+          <div class="cta-option">
+            <h3>For Individuals</h3>
+            <p>Register your needs, volunteer, or support our mission</p>
+            <a href="register.html" class="btn-primary">Get Involved</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer" aria-labelledby="footer-heading">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 id="footer-heading">AI Disaster Response System</h3>
+          <p>Harnessing artificial intelligence to predict disasters, coordinate response efforts, and save lives through efficient resource allocation.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="alerts.html">Alerts</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="volunteers.html">Volunteer</a></li>
+            <li><a href="register.html">Register Needs</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> support@aidisasterresponse.org</p>
+            <p><i class="fas fa-phone"></i> +1 (555) 123-HELP</p>
+            <p><i class="fas fa-map-marker-alt"></i> Global Response Center, Geneva, Switzerland</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 AI Disaster Response System. All rights reserved.</p>
+        <p>Designed to save lives through technology</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+       

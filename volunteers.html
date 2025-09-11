@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Disaster Response System\</title>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <!-- ================= NEWS TICKER ================= -->
+  <div class="news-ticker">
+    <div class="ticker-content">
+      <i class="fas fa-bullhorn"></i> URGENT: Volunteers needed for flood response in Southeast Asia. Register now.
+    </div>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="main-header">
+    <div class="logo">
+      <h1>AI Disaster Response</h1>
+    </div>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="alerts.html">Alerts</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="volunteers.html" class="active">Volunteers</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Weather Widget -->
+    <div class="weather-widget">
+      <i class="fas fa-cloud-sun"></i>
+      <span>28°C</span>
+    </div>
+  </header>
+
+  <!-- ================= VOLUNTEERS HERO SECTION ================= -->
+  <section class="volunteers-hero">
+    <div class="volunteers-hero-content">
+      <h1>Join Our Volunteer Network</h1>
+      <p>Make a difference in disaster response and recovery efforts around the world</p>
+    </div>
+  </section>
+
+  <!-- ================= VOLUNTEER STATS ================= -->
+  <section class="volunteer-stats">
+    <div class="stats-container">
+      <div class="stat-card">
+        <div class="stat-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <div class="stat-content">
+          <h3>15,247</h3>
+          <p>Registered Volunteers</p>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon">
+          <i class="fas fa-globe-americas"></i>
+        </div>
+        <div class="stat-content">
+          <h3>42</h3>
+          <p>Countries Served</p>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon">
+          <i class="fas fa-hands-helping"></i>
+        </div>
+        <div class="stat-content">
+          <h3>287</h3>
+          <p>Active Deployments</p>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon">
+          <i class="fas fa-heart"></i>
+        </div>
+        <div class="stat-content">
+          <h3>500K+</h3>
+          <p>Lives Impacted</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VOLUNTEER OPPORTUNITIES ================= -->
+  <section class="volunteer-opportunities">
+    <h2 class="section-title">Volunteer Opportunities</h2>
+    <div class="opportunities-grid">
+      <div class="opportunity-card">
+        <div class="opportunity-image">
+          <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&q=80&w=1000" alt="Field responder">
+        </div>
+        <div class="opportunity-content">
+          <h3>Field Responder</h3>
+          <p class="opportunity-location"><i class="fas fa-map-marker-alt"></i> Various Locations</p>
+          <p class="opportunity-desc">Provide direct assistance in disaster-affected areas, including search and rescue, first aid, and distribution of supplies.</p>
+          <div class="opportunity-requirements">
+            <h4>Requirements:</h4>
+            <ul>
+              <li>Emergency response certification</li>
+              <li>Physical fitness for demanding conditions</li>
+              <li>Availability for 2-4 week deployments</li>
+            </ul>
+          </div>
+          <a href="#" class="btn-primary">Apply Now</a>
+        </div>
+      </div>
+      
+      <div class="opportunity-card">
+        <div class="opportunity-image">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000" alt="Remote support">
+        </div>
+        <div class="opportunity-content">
+          <h3>Remote Support Specialist</h3>
+          <p class="opportunity-location"><i class="fas fa-map-marker-alt"></i> Remote</p>
+          <p class="opportunity-desc">Provide technical support, data analysis, or coordination assistance from anywhere in the world.</p>
+          <div class="opportunity-requirements">
+            <h4>Requirements:</h4>
+            <ul>
+              <li>Technical skills relevant to role</li>
+              <li>Reliable internet connection</li>
+              <li>Availability during crisis events</li>
+            </ul>
+          </div>
+          <a href="#" class="btn-primary">Apply Now</a>
+        </div>
+      </div>
+      
+      <div class="opportunity-card">
+        <div class="opportunity-image">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1000" alt="Community preparedness">
+        </div>
+        <div class="opportunity-content">
+          <h3>Community Preparedness Educator</h3>
+          <p class="opportunity-location"><i class="fas fa-map-marker-alt"></i> Local Communities</p>
+          <p class="opportunity-desc">Educate communities about disaster preparedness and response through workshops and training sessions.</p>
+          <div class="opportunity-requirements">
+            <h4>Requirements:</h4>
+            <ul>
+              <li>Teaching or public speaking experience</li>
+              <li>Knowledge of disaster preparedness</li>
+              <li>Cultural sensitivity</li>
+            </ul>
+          </div>
+          <a href="#" class="btn-primary">Apply Now</a>
+        </div>
+      </div>
+      
+      <div class="opportunity-card">
+        <div class="opportunity-image">
+          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1000" alt="Technical specialist">
+        </div>
+        <div class="opportunity-content">
+          <h3>Technical Specialist</h3>
+          <p class="opportunity-location"><i class="fas fa-map-marker-alt"></i> Various Locations</p>
+          <p class="opportunity-desc">Deploy and maintain technology infrastructure in disaster zones, including communication systems and monitoring equipment.</p>
+          <div class="opportunity-requirements">
+            <h4>Requirements:</h4>
+            <ul>
+              <li>Technical certifications (IT, communications, etc.)</li>
+              <li>Experience with field technology deployment</li>
+              <li>Problem-solving skills in challenging environments</li>
+            </ul>
+          </div>
+          <a href="#" class="btn-primary">Apply Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VOLUNTEER REGISTRATION ================= -->
+  <section class="volunteer-registration">
+    <div class="registration-container">
+      <div class="registration-content">
+        <h2>Become a Volunteer</h2>
+        <p>Join our network of dedicated volunteers making a difference in disaster response worldwide</p>
+        
+        <form class="registration-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" id="location" placeholder="City, Country" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="skills">Skills & Expertise</label>
+            <textarea id="skills" rows="3" placeholder="Describe your relevant skills, certifications, and experience"></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label>Volunteer Interests:</label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="interests" value="field"> Field Response</label>
+              <label><input type="checkbox" name="interests" value="remote"> Remote Support</label>
+              <label><input type="checkbox" name="interests" value="technical"> Technical Specialist</label>
+              <label><input type="checkbox" name="interests" value="education"> Community Education</label>
+              <label><input type="checkbox" name="interests" value="coordination"> Coordination & Logistics</label>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label>Availability:</label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="availability" value="immediate"> Immediate Deployment</label>
+              <label><input type="checkbox" name="availability" value="short"> Short Notice (48-72 hours)</label>
+              <label><input type="checkbox" name="availability" value="planned"> Planned Deployments</label>
+              <label><input type="checkbox" name="availability" value="remote"> Remote Only</label>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="commitment">Time Commitment</label>
+            <select id="commitment">
+              <option value="">Select availability</option>
+              <option value="part">Part-time (5-15 hours/week)</option>
+              <option value="full">Full-time (during deployments)</option>
+              <option value="flexible">Flexible/As needed</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="language">Languages Spoken</label>
+            <input type="text" id="language" placeholder="List languages and proficiency level">
+          </div>
+          
+          <div class="form-group agreement">
+            <label>
+              <input type="checkbox" required>
+              I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+            </label>
+          </div>
+          
+          <button type="submit" class="btn-primary">Submit Application</button>
+        </form>
+      </div>
+      <div class="registration-image">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1000" alt="Volunteers in action">
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VOLUNTEER TRAINING ================= -->
+  <section class="volunteer-training">
+    <div class="training-container">
+      <h2 class="section-title">Volunteer Training</h2>
+      <p>All volunteers receive comprehensive training based on their role and experience level</p>
+      
+      <div class="training-cards">
+        <div class="training-card">
+          <div class="training-icon">
+            <i class="fas fa-laptop"></i>
+          </div>
+          <h3>Online Courses</h3>
+          <p>Self-paced training modules covering disaster response fundamentals, safety protocols, and system operation.</p>
+          <a href="#" class="btn-secondary">Access Training</a>
+        </div>
+        
+        <div class="training-card">
+          <div class="training-icon">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <h3>Hands-on Workshops</h3>
+          <p>In-person training sessions conducted in various regions throughout the year.</p>
+          <a href="#" class="btn-secondary">View Schedule</a>
+        </div>
+        
+        <div class="training-card">
+          <div class="training-icon">
+            <i class="fas fa-vr-cardboard"></i>
+          </div>
+          <h3>VR Simulations</h3>
+          <p>Immersive training experiences using virtual reality to simulate disaster scenarios.</p>
+          <a href="#" class="btn-secondary">Try Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VOLUNTEER TESTIMONIALS ================= -->
+  <section class="volunteer-testimonials">
+    <div class="testimonials-container">
+      <h2 class="section-title">Volunteer Stories</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Volunteering with AI Disaster Response allowed me to use my technical skills to make a real difference during the Nepal earthquake. The training was comprehensive and the support during deployment was exceptional."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Raj Patel">
+              <div>
+                <h4>Raj Patel</h4>
+                <p>Technical Volunteer, 3 years</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"As a retired emergency nurse, I've found a new way to contribute through remote medical coordination. The AI systems help us prioritize cases and get help where it's needed most efficiently."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Maria Gonzalez">
+              <div>
+                <h4>Maria Gonzalez</h4>
+                <p>Medical Coordinator, 2 years</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"The community education program allowed me to help prepare my own community for hurricane season. The AI predictions gave us enough warning to evacuate safely when the big storm hit."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="James Wilson">
+              <div>
+                <h4>James Wilson</h4>
+                <p>Community Educator, 1 year</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ SECTION ================= -->
+  <section class="volunteer-faq">
+    <div class="faq-container">
+      <h2 class="section-title">Volunteer FAQs</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>What qualifications do I need to volunteer?</h3>
+          <p>Qualifications vary by role. Field responders need relevant certifications, while technical roles require specific skills. Many positions are available for those with willingness to learn and help.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Are volunteers compensated?</h3>
+          <p>While most positions are unpaid, we cover all deployment-related expenses including travel, accommodation, meals, and insurance for field volunteers.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>How much time commitment is required?</h3>
+          <p>Time commitments vary from a few hours per week for remote volunteers to full-time during deployments for field responders.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Do I need prior disaster experience?</h3>
+          <p>While experience is beneficial, it's not always required. We provide comprehensive training for all volunteers based on their role and experience level.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can I volunteer remotely?</h3>
+          <p>Yes, we have many remote volunteering opportunities in areas like data analysis, coordination, communication, and technical support.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>How quickly can I be deployed?</h3>
+          <p>Trained and certified volunteers can be deployed within 48-72 hours of a disaster, depending on the role and location.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="main-footer">
+    <div class="footer-columns">
+      <div class="footer-about">
+        <h3>About</h3>
+        <p>
+          AI Disaster Response System is a research-based project aimed at
+          modernizing disaster management using Artificial Intelligence.
+        </p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="volunteers.html">Volunteers</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>Email: support@aidisaster.com</p>
+        <p>Phone: +91-9876543210</p>
+        <p>Location: Greater Noida, India</p>
+      </div>
+      <div class="footer-newsletter">
+        <h3>Stay Updated</h3>
+        <form>
+          <input type="email" placeholder="Your email address">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 AI Disaster Response System. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ================= EMERGENCY BUTTON ================= -->
+  <div class="emergency-button">
+    <i class="fas fa-phone-alt"></i>
+  </div>
+</body>
+</html>

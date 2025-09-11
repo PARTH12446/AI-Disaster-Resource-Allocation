@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Real-time disaster alerts and predictive warnings from AI Disaster Response System">
+  <title>AI Disaster Response System - Alerts</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Added Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="main.css">
+  
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="news-ticker" aria-label="News ticker">
+    <div class="ticker-content">
+      <i class="fas fa-bullhorn" aria-hidden="true"></i> ALERT: New flood warnings issued for coastal regions. Evacuation plans activated.
+    </div>
+  </div>
+  <header class="main-header">
+    <div class="logo">
+      <h1>AI Disaster Response</h1>
+    </div>
+    <nav class="navbar" aria-label="Main navigation">
+      <button class="mobile-menu-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="alerts.html" class="active" aria-current="page">Alerts</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="volunteers.html">Volunteers</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+    <div class="weather-widget" aria-label="Current weather">
+      <i class="fas fa-cloud-sun" aria-hidden="true"></i>
+      <span>28°C</span>
+    </div>
+  </header>
+  
+  <main id="main-content">
+    <section class="alerts-hero" aria-labelledby="alerts-heading">
+      <div class="alerts-hero-content">
+        <h1 id="alerts-heading">Emergency Alerts & Warnings</h1>
+        <p>Real-time disaster alerts and predictive warnings to keep communities safe</p>
+      </div>
+    </section>
+    
+    <section class="alert-filters" aria-labelledby="filters-heading">
+      <div class="filters-container">
+        <h2 id="filters-heading">Filter Alerts</h2>
+        <div class="filter-options">
+          <div class="filter-group">
+            <label for="alert-type">Alert Type:</label>
+            <select id="alert-type">
+              <option value="all">All Alerts</option>
+              <option value="warning">Warnings</option>
+              <option value="watch">Watches</option>
+              <option value="advisory">Advisories</option>
+              <option value="info">Information</option>
+            </select>
+          </div>
+          
+          <div class="filter-group">
+            <label for="disaster-type">Disaster Type:</label>
+            <select id="disaster-type">
+              <option value="all">All Disasters</option>
+              <option value="flood">Floods</option>
+              <option value="earthquake">Earthquakes</option>
+              <option value="wildfire">Wildfires</option>
+              <option value="cyclone">Cyclones</option>
+              <option value="tsunami">Tsunamis</option>
+            </select>
+          </div>
+          
+          <div class="filter-group">
+            <label for="severity">Severity:</label>
+            <select id="severity">
+              <option value="all">All Levels</option>
+              <option value="extreme">Extreme</option>
+              <option value="severe">Severe</option>
+              <option value="moderate">Moderate</option>
+              <option value="minor">Minor</option>
+            </select>
+          </div>
+          
+          <div class="filter-group">
+            <label for="region">Region:</label>
+            <select id="region">
+              <option value="all">All Regions</option>
+              <option value="north-america">North America</option>
+              <option value="south-america">South America</option>
+              <option value="europe">Europe</option>
+              <option value="asia">Asia</option>
+              <option value="africa">Africa</option>
+              <option value="oceania">Oceania</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="active-alerts" aria-labelledby="active-alerts-heading">
+      <div class="alerts-container">
+        <h2 id="active-alerts-heading">Active Alerts</h2>
+        <div class="alerts-list">
+          <div class="alert-item extreme">
+            <div class="alert-icon">
+              <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+            </div>
+            <div class="alert-content">
+              <div class="alert-header">
+                <h3>Flood Warning - Coastal Regions</h3>
+                <span class="alert-time">Updated 15 minutes ago</span>
+              </div>
+              <p class="alert-description">Severe flooding expected in coastal areas due to storm surge and heavy rainfall. Evacuation orders in effect for low-lying areas.</p>
+              <div class="alert-details">
+                <span class="alert-region"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Southeast Asia</span>
+                <span class="alert-severity">Extreme</span>
+                <span class="alert-valid">Valid until: Oct 20, 2025 14:00</span>
+              </div>
+              <div class="alert-actions">
+                <a href="#" class="btn-primary">View Evacuation Routes</a>
+                <a href="#" class="btn-secondary">Safety Instructions</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="alert-item severe">
+            <div class="alert-icon">
+              <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+            </div>
+            <div class="alert-content">
+              <div class="alert-header">
+                <h3>Wildfire Alert - Western US</h3>
+                <span class="alert-time">Updated 2 hours ago</span>
+              </div>
+              <p class="alert-description">Extreme fire weather conditions with strong winds and low humidity. Pre-evacuation notices issued for several communities.</p>
+              <div class="alert-details">
+                <span class="alert-region"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> California, USA</span>
+                <span class="alert-severity">Severe</span>
+                <span class="alert-valid">Valid until: Oct 19, 2025 18:00</span>
+              </div>
+              <div class="alert-actions">
+                <a href="#" class="btn-primary">Fire Progression Map</a>
+                <a href="#" class="btn-secondary">Air Quality Info</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="alert-item moderate">
+            <div class="alert-icon">
+              <i class="fas fa-info-circle" aria-hidden="true"></i>
+            </div>
+            <div class="alert-content">
+              <div class="alert-header">
+                <h3>Tropical Storm Watch - Caribbean</h3>
+                <span class="alert-time">Updated 5 hours ago</span>
+              </div>
+              <p class="alert-description">Tropical depression expected to strengthen into a tropical storm within 48 hours. Coastal areas should monitor developments.</p>
+              <div class="alert-details">
+                <span class="alert-region"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Caribbean Sea</span>
+                <span class="alert-severity">Moderate</span>
+                <span class="alert-valid">Valid until: Oct 22, 2025 08:00</span>
+              </div>
+              <div class="alert-actions">
+                <a href="#" class="btn-primary">Storm Tracking Map</a>
+                <a href="#" class="btn-secondary">Preparation Guide</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="alert-item minor">
+            <div class="alert-icon">
+              <i class="fas fa-info-circle" aria-hidden="true"></i>
+            </div>
+            <div class="alert-content">
+              <div class="alert-header">
+                <h3>Earthquake Advisory - Pacific Rim</h3>
+                <span class="alert-time">Updated 1 day ago</span>
+              </div>
+              <p class="alert-description">Increased seismic activity detected along fault lines. No immediate threat but residents should review earthquake preparedness.</p>
+              <div class="alert-details">
+                <span class="alert-region"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Pacific Ocean</span>
+                <span class="alert-severity">Minor</span>
+                <span class="alert-valid">Valid until: Oct 25, 2025 00:00</span>
+              </div>
+              <div class="alert-actions">
+                <a href="#" class="btn-primary">Seismic Activity Map</a>
+                <a href="#" class="btn-secondary">Earthquake Safety</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="alert-subscription" aria-labelledby="subscription-heading">
+      <div class="subscription-container">
+        <div class="subscription-content">
+          <h2 id="subscription-heading">Stay Informed with Custom Alerts</h2>
+          <p>Receive personalized disaster alerts for your specific location and preferences</p>
+          <form class="subscription-form">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="Your email address" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Mobile Number (for SMS alerts)</label>
+              <input type="tel" id="phone" placeholder="Your mobile number">
+            </div>
+            
+            <div class="form-group">
+              <label for="location">Your Location</label>
+              <input type="text" id="location" placeholder="City, Region, Country" required>
+            </div>
+            
+            <div class="form-group">
+              <label>Alert Types:</label>
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="alert-types" value="flood" checked> Floods</label>
+                <label><input type="checkbox" name="alert-types" value="earthquake" checked> Earthquakes</label>
+                <label><input type="checkbox" name="alert-types" value="wildfire" checked> Wildfires</label>
+                <label><input type="checkbox" name="alert-types" value="cyclone" checked> Cyclones</label>
+                <label><input type="checkbox" name="alert-types" value="tsunami"> Tsunamis</label>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label>Notification Methods:</label>
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="notification-methods" value="email" checked> Email</label>
+                <label><input type="checkbox" name="notification-methods" value="sms"> SMS</label>
+                <label><input type="checkbox" name="notification-methods" value="push"> Push Notification</label>
+              </div>
+            </div>
+            
+            <button type="submit" class="btn-primary">Subscribe to Alerts</button>
+          </form>
+        </div>
+        <div class="subscription-image">
+          <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=1000" alt="Alert notification on multiple devices">
+        </div>
+      </div>
+    </section>
+    
+    <section class="historical-alerts" aria-labelledby="historical-heading">
+      <div class="historical-container">
+        <h2 id="historical-heading">Historical Alert Data</h2>
+        <p>Review past alerts and their outcomes to better understand disaster patterns</p>
+        
+        <div class="historical-stats">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-bell" aria-hidden="true"></i>
+            </div>
+            <div class="stat-content">
+              <h3>1,247</h3>
+              <p>Alerts Issued</p>
+            </div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+            </div>
+            <div class="stat-content">
+              <h3>94.3%</h3>
+              <p>Accuracy Rate</p>
+            </div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-clock" aria-hidden="true"></i>
+            </div>
+            <div class="stat-content">
+              <h3>48h</h3>
+              <p>Average Early Warning</p>
+            </div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-users" aria-hidden="true"></i>
+            </div>
+            <div class="stat-content">
+              <h3>2.1M</h3>
+              <p>People Protected</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="historical-chart">
+          <img src="https://images.unsplash.com/photo-1564422167506-84bacb7c4956?auto=format&fit=crop&q=80&w=1000" alt="Chart showing historical alert data and accuracy trends">
+        </div>
+        
+        <a href="#" class="btn-secondary">Download Full Alert History</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-about">
+          <h3>About</h3>
+          <p>
+            AI Disaster Response System is a research-based project aimed at
+            modernizing disaster management using Artificial Intelligence.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="alerts.html">Alerts</a></li>
+            <li><a href="volunteers.html">Volunteers</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p>Email: support@aidisaster.com</p>
+          <p>Phone: +91-9876543210</p>
+          <p>Location: Greater Noida, India</p>
+          <div class="emergency-contact">
+            <h4>Emergency Hotline</h4>
+            <p class="emergency-number">+91-9123456789</p>
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <h3>Stay Updated</h3>
+          <p>Subscribe to our newsletter for the latest updates on disaster predictions and preparedness tips.</p>
+          <form>
+            <label for="email-newsletter" class="visually-hidden">Email address</label>
+            <input type="email" id="email-newsletter" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="app-download">
+            <h4>Download Our App</h4>
+            <div class="app-badges">
+              <a href="#" aria-label="Download on App Store"><img src="https://via.placeholder.com/120x40/000/fff?text=App+Store" alt="Download on App Store"></a>
+              <a href="#" aria-label="Download on Google Play"><img src="https://via.placeholder.com/120x40/000/fff?text=Google+Play" alt="Download on Google Play"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 AI Disaster Response System. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="sitemap.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= EMERGENCY BUTTON ================= -->
+  <div class="emergency-button" role="button" aria-label="Emergency contact">
+    <i class="fas fa-phone-alt" aria-hidden="true"></i>
+  </div>
+  
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</body>
+</html>

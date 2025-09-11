@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Disaster Response System - Support</title>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <!-- ================= NEWS TICKER ================= -->
+  <div class="news-ticker">
+    <div class="ticker-content">
+      <i class="fas fa-bullhorn"></i> NEW: Our support team is available 24/7 to assist with any questions or issues.
+    </div>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="main-header">
+    <div class="logo">
+      <h1>AI Disaster Response</h1>
+    </div>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="alerts.html">Alerts</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="volunteers.html">Volunteers</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="support.html" class="active">Support</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Weather Widget -->
+    <div class="weather-widget">
+      <i class="fas fa-cloud-sun"></i>
+      <span>28°C</span>
+    </div>
+  </header>
+
+  <!-- ================= SUPPORT HERO SECTION ================= -->
+  <section class="support-hero">
+    <div class="support-hero-content">
+      <h1>Technical Support Center</h1>
+      <p>Get help with technical issues, system access, and emergency response coordination</p>
+    </div>
+  </section>
+
+  <!-- ================= SUPPORT OPTIONS ================= -->
+  <section class="support-options">
+    <div class="options-container">
+      <h2>How can we help you today?</h2>
+      <div class="options-grid">
+        <div class="option-card">
+          <div class="option-icon">
+            <i class="fas fa-question-circle"></i>
+          </div>
+          <h3>Technical Assistance</h3>
+          <p>Get help with login issues, system errors, or technical problems with our platform.</p>
+          <a href="#technical-support" class="btn-secondary">Get Help</a>
+        </div>
+        
+        <div class="option-card">
+          <div class="option-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3>Knowledge Base</h3>
+          <p>Browse our comprehensive documentation and user guides.</p>
+          <a href="#knowledge-base" class="btn-secondary">Browse Articles</a>
+        </div>
+        
+        <div class="option-card">
+          <div class="option-icon">
+            <i class="fas fa-comments"></i>
+          </div>
+          <h3>Live Chat</h3>
+          <p>Chat with our support team in real-time for immediate assistance.</p>
+          <a href="#live-chat" class="btn-secondary">Start Chat</a>
+        </div>
+        
+        <div class="option-card">
+          <div class="option-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <h3>Emergency Hotline</h3>
+          <p>For urgent disaster response coordination and critical system issues.</p>
+          <a href="#emergency-contact" class="btn-emergency">Call Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TECHNICAL SUPPORT FORM ================= -->
+  <section id="technical-support" class="support-form-section">
+    <div class="form-container">
+      <h2>Technical Support Request</h2>
+      <p>Submit a ticket for technical assistance. Our team will respond within 24 hours.</p>
+      
+      <form class="support-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="organization">Organization</label>
+          <input type="text" id="organization" name="organization">
+        </div>
+        
+        <div class="form-group">
+          <label for="urgency">Urgency Level</label>
+          <select id="urgency" name="urgency" required>
+            <option value="">Select urgency</option>
+            <option value="low">Low - General inquiry</option>
+            <option value="medium">Medium - System issue affecting workflow</option>
+            <option value="high">High - Critical function unavailable</option>
+            <option value="emergency">Emergency - Affecting active disaster response</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="issue-type">Issue Type</label>
+          <select id="issue-type" name="issue-type" required>
+            <option value="">Select issue type</option>
+            <option value="login">Login/Access Issues</option>
+            <option value="technical">Technical Error</option>
+            <option value="data">Data Accuracy Question</option>
+            <option value="feature">Feature Request</option>
+            <option value="training">Training Question</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" rows="5" required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="attachment">Attach Screenshot (if applicable)</label>
+          <input type="file" id="attachment" name="attachment">
+        </div>
+        
+        <button type="submit" class="btn-primary">Submit Request</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= KNOWLEDGE BASE ================= -->
+  <section id="knowledge-base" class="knowledge-base">
+    <div class="kb-container">
+      <h2>Knowledge Base</h2>
+      <p>Browse our helpful articles and documentation</p>
+      
+      <div class="kb-search">
+        <input type="text" placeholder="Search knowledge base...">
+        <button><i class="fas fa-search"></i> Search</button>
+      </div>
+      
+      <div class="kb-categories">
+        <h3>Popular Categories</h3>
+        <div class="kb-category-grid">
+          <div class="kb-category">
+            <h4><i class="fas fa-user-circle"></i> Getting Started</h4>
+            <ul>
+              <li><a href="#">System Overview</a></li>
+              <li><a href="#">Account Setup</a></li>
+              <li><a href="#">Basic Navigation</a></li>
+              <li><a href="#">User Permissions</a></li>
+            </ul>
+          </div>
+          
+          <div class="kb-category">
+            <h4><i class="fas fa-map-marked-alt"></i> Disaster Mapping</h4>
+            <ul>
+              <li><a href="#">Reading Disaster Maps</a></li>
+              <li><a href="#">Predictive Models Explained</a></li>
+              <li><a href="#">Real-time Data Integration</a></li>
+              <li><a href="#">Custom Map Views</a></li>
+            </ul>
+          </div>
+          
+          <div class="kb-category">
+            <h4><i class="fas fa-bell"></i> Alert System</h4>
+            <ul>
+              <li><a href="#">Setting Up Alerts</a></li>
+              <li><a href="#">Alert Thresholds</a></li>
+              <li><a href="#">Notification Channels</a></li>
+              <li><a href="#">Emergency Protocols</a></li>
+            </ul>
+          </div>
+          
+          <div class="kb-category">
+            <h4><i class="fas fa-users"></i> Response Coordination</h4>
+            <ul>
+              <li><a href="#">Team Management</a></li>
+              <li><a href="#">Resource Allocation</a></li>
+              <li><a href="#">Communication Tools</a></li>
+              <li><a href="#">Incident Reporting</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="kb-popular">
+        <h3>Popular Articles</h3>
+        <div class="popular-articles">
+          <div class="article">
+            <h4><a href="#">How to Interpret Prediction Confidence Levels</a></h4>
+            <p>Understanding what the confidence percentages mean for different disaster predictions.</p>
+          </div>
+          <div class="article">
+            <h4><a href="#">Setting Up Custom Alert Rules</a></h4>
+            <p>Create personalized alert rules based on your specific needs and location.</p>
+          </div>
+          <div class="article">
+            <h4><a href="#">Integrating With Local Emergency Systems</a></h4>
+            <p>Step-by-step guide to connecting our system with your existing emergency response infrastructure.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LIVE CHAT ================= -->
+  <section id="live-chat" class="live-chat">
+    <div class="chat-container">
+      <h2>Live Chat Support</h2>
+      <p>Our average response time is under 5 minutes during business hours</p>
+      
+      <div class="chat-status">
+        <div class="status-indicator online"></div>
+        <span>Support agents are currently online</span>
+      </div>
+      
+      <div class="chat-hours">
+        <h4>Chat Availability</h4>
+        <p>Monday-Friday: 8:00 AM - 8:00 PM (EST)</p>
+        <p>Saturday-Sunday: 9:00 AM - 5:00 PM (EST)</p>
+        <p>Emergency support available 24/7 for active disaster events</p>
+      </div>
+      
+      <button class="btn-primary chat-start-btn">Start Chat Session</button>
+    </div>
+  </section>
+
+  <!-- ================= EMERGENCY CONTACT ================= -->
+  <section id="emergency-contact" class="emergency-contact">
+    <div class="emergency-container">
+      <h2>Emergency Contact Information</h2>
+      <p class="emergency-warning">For urgent matters related to active disaster response only</p>
+      
+      <div class="emergency-content">
+        <div class="emergency-info">
+          <div class="emergency-method">
+            <div class="emergency-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="emergency-details">
+              <h3>Emergency Hotline</h3>
+              <p class="phone-number">+1-800-AI-DISASTER</p>
+              <p>Available 24/7 for active disaster coordination</p>
+            </div>
+          </div>
+          
+          <div class="emergency-method">
+            <div class="emergency-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="emergency-details">
+              <h3>Emergency Email</h3>
+              <p class="email-address">emergency@aidisaster.com</p>
+              <p>Monitored 24/7 during active disasters</p>
+            </div>
+          </div>
+          
+          <div class="emergency-method">
+            <div class="emergency-icon">
+              <i class="fas fa-broadcast-tower"></i>
+            </div>
+            <div class="emergency-details">
+              <h3>Emergency Radio Channel</h3>
+              <p class="radio-channel">Channel 7.325 MHz (Shortwave)</p>
+              <p>Backup communication during infrastructure failure</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="emergency-notice">
+          <div class="notice-header">
+            <i class="fas fa-exclamation-triangle"></i>
+            <h3>When to Use Emergency Channels</h3>
+          </div>
+          <ul>
+            <li>Active disaster response coordination</li>
+            <li>Critical system failure during disaster events</li>
+            <li>Life-threatening situations requiring system data</li>
+            <li>Time-sensitive resource allocation needs</li>
+          </ul>
+          <p>For non-urgent technical issues, please use the technical support form to ensure proper ticket tracking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SUPPORT STATUS ================= -->
+  <section class="support-status">
+    <div class="status-container">
+      <h2>System Status</h2>
+      <p>Current operational status of our platform and services</p>
+      
+      <div class="status-grid">
+        <div class="status-item operational">
+          <div class="status-indicator"></div>
+          <h3>AI Prediction Engine</h3>
+          <p>Operational</p>
+        </div>
+        
+        <div class="status-item operational">
+          <div class="status-indicator"></div>
+          <h3>Alert System</h3>
+          <p>Operational</p>
+        </div>
+        
+        <div class="status-item maintenance">
+          <div class="status-indicator"></div>
+          <h3>Data Import Services</h3>
+          <p>Maintenance - Expected resolution in 2 hours</p>
+        </div>
+        
+        <div class="status-item operational">
+          <div class="status-indicator"></div>
+          <h3>Mobile Applications</h3>
+          <p>Operational</p>
+        </div>
+        
+        <div class="status-item operational">
+          <div class="status-indicator"></div>
+          <h3>API Services</h3>
+          <p>Operational</p>
+        </div>
+        
+        <div class="status-item degraded">
+          <div class="status-indicator"></div>
+          <h3>Satellite Imagery Processing</h3>
+          <p>Degraded Performance - Investigating</p>
+        </div>
+      </div>
+      
+      <div class="incident-history">
+        <h3>Recent Incidents</h3>
+        <div class="incident">
+          <div class="incident-date">October 15, 2025</div>
+          <div class="incident-details">
+            <h4>API Response Time Degradation</h4>
+            <p>Between 14:30-16:45 EST, some users experienced slower API responses. Root cause was identified as a database indexing issue and has been resolved.</p>
+          </div>
+        </div>
+        
+        <div class="incident">
+          <div class="incident-date">October 12, 2025</div>
+          <div class="incident-details">
+            <h4>Scheduled Maintenance</h4>
+            <p>Regular system maintenance was performed between 01:00-04:00 EST. All services were unavailable during this window.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ PREVIEW ================= -->
+  <section class="faq-preview">
+    <div class="faq-preview-container">
+      <h2>Common Support Questions</h2>
+      <div class="faq-preview-grid">
+        <div class="faq-preview-item">
+          <h3>How do I reset my password?</h3>
+          <p>Visit the login page and click "Forgot Password" to receive reset instructions via email.</p>
+          <a href="faq.html">Read more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="faq-preview-item">
+          <h3>What browsers are supported?</h3>
+          <p>Our system works best with Chrome, Firefox, Safari, and Edge (latest versions).</p>
+          <a href="faq.html">Read more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="faq-preview-item">
+          <h3>How do I add team members?</h3>
+          <p>Account administrators can add team members through the Organization Settings page.</p>
+          <a href="faq.html">Read more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="faq-preview-item">
+          <h3>Where can I find API documentation?</h3>
+          <p>Comprehensive API documentation is available to registered developers in the Developer Portal.</p>
+          <a href="faq.html">Read more <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="faq-preview-cta">
+        <a href="faq.html" class="btn-secondary">Visit Full FAQ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="main-footer">
+    <div class="footer-columns">
+      <div class="footer-about">
+        <h3>About</h3>
+        <p>
+          AI Disaster Response System is a research-based project aimed at
+          modernizing disaster management using Artificial Intelligence.
+        </p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>Email: support@aidisaster.com</p>
+        <p>Phone: +91-9876543210</p>
+        <p>Location: Greater Noida, India</p>
+      </div>
+      <div class="footer-newsletter">
+        <h3>Stay Updated</h3>
+        <form>
+          <input type="email" placeholder="Your email address">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 AI Disaster Response System. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ================= EMERGENCY BUTTON ================= -->
+  <div class="emergency-button">
+    <i class="fas fa-phone-alt"></i>
+  </div>
+</body>
+</html>
